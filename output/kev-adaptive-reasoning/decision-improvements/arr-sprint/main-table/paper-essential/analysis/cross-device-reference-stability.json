@@ -1,0 +1,1 @@
+{"answer_disagreements":35,"generation_disagreements":457,"interpretation":"GPU0/GPU2 complete-policy reproducibility; no cross-device speedup inference.","n":768,"route_disagreements":11}

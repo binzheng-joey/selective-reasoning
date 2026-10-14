@@ -1,0 +1,4286 @@
+{
+  "UTC": "2026-10-12T11:29:27.479813+00:00",
+  "factorial": [
+    {
+      "answer_changes": 42,
+      "corrected": 26,
+      "dataset": "all",
+      "method": "factorial-benefit_raw-learned_tick4",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            0.0013020833333333703,
+            0.03385416666666663
+          ],
+          "difference": 0.016927083333333332
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.04557291666666666,
+            0.09114583333333334
+          ],
+          "difference": 0.06770833333333333
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.09114583333333337,
+            -0.04557291666666663
+          ],
+          "difference": -0.06770833333333333
+        },
+        "full_reads": {
+          "ci95": [
+            -1.8229492187500003,
+            -1.5390625
+          ],
+          "difference": -1.6809895833333333,
+          "ratio": 0.597568578553616,
+          "ratio_ci95": [
+            0.5739330758489399,
+            0.6223588843790449
+          ],
+          "saving_fraction": 0.402431421446384,
+          "saving_fraction_ci95": [
+            0.37764111562095515,
+            0.42606692415106007
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            41.993261718749984,
+            69.43359374999994
+          ],
+          "difference": 55.5390625,
+          "ratio": 1.1188262791779606,
+          "ratio_ci95": [
+            1.0882188611052535,
+            1.1517892898636752
+          ],
+          "saving_fraction": -0.11882627917796063,
+          "saving_fraction_ci95": [
+            -0.15178928986367524,
+            -0.08821886110525345
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            -1349.2683593749998,
+            -1080.2217122395832
+          ],
+          "difference": -1215.0403645833333,
+          "ratio": 0.5896097921817703,
+          "ratio_ci95": [
+            0.558882232667643,
+            0.6222983266178365
+          ],
+          "saving_fraction": 0.41039020781822966,
+          "saving_fraction_ci95": [
+            0.37770167338216354,
+            0.44111776733235697
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            40.26552734375,
+            67.83730468749998
+          ],
+          "difference": 53.858072916666664,
+          "ratio": 1.1142091123204911,
+          "ratio_ci95": [
+            1.0838241288002215,
+            1.1469284837393496
+          ],
+          "saving_fraction": -0.11420911232049114,
+          "saving_fraction_ci95": [
+            -0.14692848373934964,
+            -0.0838241288002215
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            0.2765186099140316,
+            0.5386335003523979
+          ],
+          "difference": 0.40574402069432836,
+          "ratio": 1.0876137683805676,
+          "ratio_ci95": [
+            1.0584653958686292,
+            1.1187725393288757
+          ],
+          "saving_fraction": -0.08761376838056756,
+          "saving_fraction_ci95": [
+            -0.11877253932887566,
+            -0.0584653958686292
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "trigger_calls": {
+          "ci95": [
+            6.45703125,
+            7.12109375
+          ],
+          "difference": 6.791666666666667,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        }
+      },
+      "n": 768,
+      "reference": "factorial-benefit_raw-every8",
+      "regressed": 13,
+      "routing_changes": 0,
+      "same_device": true
+    },
+    {
+      "answer_changes": 24,
+      "corrected": 11,
+      "dataset": "all",
+      "method": "factorial-benefit_raw-learned_tick4",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.009114583333333263,
+            0.01432291666666663
+          ],
+          "difference": 0.0026041666666666665
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            -0.03255208333333337,
+            0.0013020833333333703
+          ],
+          "difference": -0.015625
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            0.08723958333333331,
+            0.15234375
+          ],
+          "difference": 0.11979166666666667
+        },
+        "full_reads": {
+          "ci95": [
+            -0.08333333333333348,
+            0.078125
+          ],
+          "difference": 0.0,
+          "ratio": 1.0,
+          "ratio_ci95": [
+            0.9670382315856276,
+            1.031958941390352
+          ],
+          "saving_fraction": 0.0,
+          "saving_fraction_ci95": [
+            -0.03195894139035205,
+            0.03296176841437237
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            -13.729720052083296,
+            31.271093749999977
+          ],
+          "difference": 9.032552083333334,
+          "ratio": 1.017576353381744,
+          "ratio_ci95": [
+            0.9738592222498792,
+            1.0624445789675128
+          ],
+          "saving_fraction": -0.017576353381743903,
+          "saving_fraction_ci95": [
+            -0.062444578967512765,
+            0.026140777750120803
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            -96.38779296875,
+            50.486783854166575
+          ],
+          "difference": -20.93359375,
+          "ratio": 0.9881502719754706,
+          "ratio_ci95": [
+            0.946726916923428,
+            1.029169793918247
+          ],
+          "saving_fraction": 0.011849728024529438,
+          "saving_fraction_ci95": [
+            -0.029169793918246922,
+            0.05327308307657197
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            -13.80081380208339,
+            31.35292968749998
+          ],
+          "difference": 9.032552083333334,
+          "ratio": 1.0174913955042295,
+          "ratio_ci95": [
+            0.9738588957496873,
+            1.0622727146460589
+          ],
+          "saving_fraction": -0.017491395504229512,
+          "saving_fraction_ci95": [
+            -0.06227271464605888,
+            0.026141104250312686
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            -0.12846605946792805,
+            0.2999246200077477
+          ],
+          "difference": 0.08820801278367678,
+          "ratio": 1.0178248808760166,
+          "ratio_ci95": [
+            0.9746886370541769,
+            1.0619475774477556
+          ],
+          "saving_fraction": -0.017824880876016636,
+          "saving_fraction_ci95": [
+            -0.061947577447755586,
+            0.025311362945823146
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.06770833333333337,
+            0.140625
+          ],
+          "difference": 0.10416666666666667
+        },
+        "trigger_calls": {
+          "ci95": [
+            -0.18489583333333304,
+            0.3580729166666661
+          ],
+          "difference": 0.09114583333333333,
+          "ratio": 1.013602798289934,
+          "ratio_ci95": [
+            0.9731408253458548,
+            1.0547184773988898
+          ],
+          "saving_fraction": -0.013602798289934048,
+          "saving_fraction_ci95": [
+            -0.0547184773988898,
+            0.026859174654145224
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "factorial-margin-learned_tick4",
+      "regressed": 9,
+      "routing_changes": 236,
+      "same_device": true
+    },
+    {
+      "answer_changes": 60,
+      "corrected": 35,
+      "dataset": "all",
+      "method": "factorial-benefit_raw-learned_tick4",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            0.0013020833333332593,
+            0.0390625
+          ],
+          "difference": 0.01953125
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.0078125,
+            0.0625
+          ],
+          "difference": 0.03515625
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            0.03125,
+            0.10807291666666663
+          ],
+          "difference": 0.06901041666666667
+        },
+        "full_reads": {
+          "ci95": [
+            -1.9765624999999996,
+            -1.6367187500000004
+          ],
+          "difference": -1.8046875,
+          "ratio": 0.5803814713896458,
+          "ratio_ci95": [
+            0.5526381707570147,
+            0.6091226798258306
+          ],
+          "saving_fraction": 0.4196185286103542,
+          "saving_fraction_ci95": [
+            0.39087732017416943,
+            0.4473618292429853
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            15.32242838541674,
+            64.15406901041665
+          ],
+          "difference": 40.091145833333336,
+          "ratio": 1.0830310793500977,
+          "ratio_ci95": [
+            1.0307744028981956,
+            1.1369846783475521
+          ],
+          "saving_fraction": -0.08303107935009768,
+          "saving_fraction_ci95": [
+            -0.13698467834755212,
+            -0.030774402898195552
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            -1545.7247395833333,
+            -1225.0723958333333
+          ],
+          "difference": -1382.5703125,
+          "ratio": 0.5580336461077463,
+          "ratio_ci95": [
+            0.5231832548543947,
+            0.5949812681084066
+          ],
+          "saving_fraction": 0.4419663538922537,
+          "saving_fraction_ci95": [
+            0.40501873189159343,
+            0.47681674514560535
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            13.406184895833277,
+            62.43037109374999
+          ],
+          "difference": 38.286458333333336,
+          "ratio": 1.078593422571954,
+          "ratio_ci95": [
+            1.026665549710712,
+            1.1321676808948344
+          ],
+          "saving_fraction": -0.07859342257195401,
+          "saving_fraction_ci95": [
+            -0.13216768089483444,
+            -0.026665549710712
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            0.018513654168842566,
+            0.4884024256439709
+          ],
+          "difference": 0.25750272915502137,
+          "ratio": 1.0538788163553983,
+          "ratio_ci95": [
+            1.0037542347735893,
+            1.1053567356754357
+          ],
+          "saving_fraction": -0.05387881635539826,
+          "saving_fraction_ci95": [
+            -0.10535673567543569,
+            -0.003754234773589271
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.06770833333333337,
+            0.140625
+          ],
+          "difference": 0.10416666666666667
+        },
+        "trigger_calls": {
+          "ci95": [
+            6.45703125,
+            7.12109375
+          ],
+          "difference": 6.791666666666667,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        }
+      },
+      "n": 768,
+      "reference": "factorial-margin-every8",
+      "regressed": 20,
+      "routing_changes": 236,
+      "same_device": true
+    },
+    {
+      "answer_changes": 64,
+      "corrected": 23,
+      "dataset": "all",
+      "method": "factorial-benefit_raw-every8",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.03385416666666663,
+            0.005208333333333259
+          ],
+          "difference": -0.014322916666666666
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            -0.10937499999999997,
+            -0.05859374999999997
+          ],
+          "difference": -0.08333333333333333
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            0.14843750000000006,
+            0.22656250000000006
+          ],
+          "difference": 0.1875
+        },
+        "full_reads": {
+          "ci95": [
+            1.516927083333333,
+            1.8424479166666665
+          ],
+          "difference": 1.6809895833333333,
+          "ratio": 1.6734480959833071,
+          "ratio_ci95": [
+            1.5923724616146608,
+            1.7567294516306282
+          ],
+          "saving_fraction": -0.6734480959833071,
+          "saving_fraction_ci95": [
+            -0.7567294516306282,
+            -0.5923724616146608
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            -69.03460286458329,
+            -25.39970703124998
+          ],
+          "difference": -46.506510416666664,
+          "ratio": 0.9095034433132833,
+          "ratio_ci95": [
+            0.8681904525287875,
+            0.9496235615656675
+          ],
+          "saving_fraction": 0.09049655668671674,
+          "saving_fraction_ci95": [
+            0.05037643843433248,
+            0.13180954747121254
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1041.5186848958335,
+            1343.4154296875
+          ],
+          "difference": 1194.1067708333333,
+          "ratio": 1.6759393841119152,
+          "ratio_ci95": [
+            1.5735204461222851,
+            1.7849527110047152
+          ],
+          "saving_fraction": -0.6759393841119152,
+          "saving_fraction_ci95": [
+            -0.7849527110047152,
+            -0.5735204461222851
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            -67.46640625000003,
+            -23.604069010416687
+          ],
+          "difference": -44.825520833333336,
+          "ratio": 0.913196081645003,
+          "ratio_ci95": [
+            0.8718106516536787,
+            0.953445984713623
+          ],
+          "saving_fraction": 0.08680391835499701,
+          "saving_fraction_ci95": [
+            0.04655401528637704,
+            0.12818934834632134
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            -0.5341235442469345,
+            -0.1143337012559493
+          ],
+          "difference": -0.31753600791065156,
+          "ratio": 0.935833023143441,
+          "ratio_ci95": [
+            0.8940507745548026,
+            0.9766291546106655
+          ],
+          "saving_fraction": 0.06416697685655903,
+          "saving_fraction_ci95": [
+            0.023370845389334538,
+            0.10594922544519736
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.06770833333333337,
+            0.140625
+          ],
+          "difference": 0.10416666666666667
+        },
+        "trigger_calls": {
+          "ci95": [
+            -7.040364583333333,
+            -6.364583333333333
+          ],
+          "difference": -6.700520833333333,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "factorial-margin-learned_tick4",
+      "regressed": 34,
+      "routing_changes": 236,
+      "same_device": true
+    },
+    {
+      "answer_changes": 18,
+      "corrected": 9,
+      "dataset": "all",
+      "method": "factorial-benefit_raw-every8",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.0078125,
+            0.01302083333333337
+          ],
+          "difference": 0.0026041666666666665
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            -0.048177083333333315,
+            -0.018229166666666657
+          ],
+          "difference": -0.032552083333333336
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            0.10286458333333337,
+            0.16927083333333337
+          ],
+          "difference": 0.13671875
+        },
+        "full_reads": {
+          "ci95": [
+            -0.25,
+            -0.005208333333333037
+          ],
+          "difference": -0.12369791666666667,
+          "ratio": 0.971238268240993,
+          "ratio_ci95": [
+            0.9425761868456101,
+            0.9987678369979565
+          ],
+          "saving_fraction": 0.02876173175900698,
+          "saving_fraction_ci95": [
+            0.0012321630020435403,
+            0.057423813154389935
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            -34.61090494791665,
+            2.5121419270833267
+          ],
+          "difference": -15.447916666666666,
+          "ratio": 0.9680064720555519,
+          "ratio_ci95": [
+            0.9297732959853406,
+            1.0054218710403304
+          ],
+          "saving_fraction": 0.0319935279444481,
+          "saving_fraction_ci95": [
+            -0.005421871040330428,
+            0.07022670401465936
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            -283.03307291666664,
+            -58.766210937499885
+          ],
+          "difference": -167.52994791666666,
+          "ratio": 0.946445689178294,
+          "ratio_ci95": [
+            0.9110744274103033,
+            0.9807997621844207
+          ],
+          "saving_fraction": 0.05355431082170603,
+          "saving_fraction_ci95": [
+            0.019200237815579335,
+            0.08892557258969669
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            -34.859537760416664,
+            2.499511718749951
+          ],
+          "difference": -15.571614583333334,
+          "ratio": 0.9680350040627806,
+          "ratio_ci95": [
+            0.9299026831188997,
+            1.0053458705105085
+          ],
+          "saving_fraction": 0.031964995937219354,
+          "saving_fraction_ci95": [
+            -0.005345870510508499,
+            0.07009731688110032
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            -0.3353950287294229,
+            0.026377542156948736
+          ],
+          "difference": -0.14824129153930699,
+          "ratio": 0.9689825993326657,
+          "ratio_ci95": [
+            0.9313737695853989,
+            1.0057293398385425
+          ],
+          "saving_fraction": 0.03101740066733427,
+          "saving_fraction_ci95": [
+            -0.005729339838542513,
+            0.06862623041460114
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.06770833333333337,
+            0.140625
+          ],
+          "difference": 0.10416666666666667
+        },
+        "trigger_calls": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        }
+      },
+      "n": 768,
+      "reference": "factorial-margin-every8",
+      "regressed": 7,
+      "routing_changes": 236,
+      "same_device": true
+    },
+    {
+      "answer_changes": 49,
+      "corrected": 29,
+      "dataset": "all",
+      "method": "factorial-margin-learned_tick4",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            0.0,
+            0.03385416666666663
+          ],
+          "difference": 0.016927083333333332
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.02734375,
+            0.07421874999999997
+          ],
+          "difference": 0.05078125
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.07421875,
+            -0.02734375
+          ],
+          "difference": -0.05078125
+        },
+        "full_reads": {
+          "ci95": [
+            -1.9492513020833337,
+            -1.661458333333333
+          ],
+          "difference": -1.8046875,
+          "ratio": 0.5803814713896458,
+          "ratio_ci95": [
+            0.5565488436293557,
+            0.6047419264148346
+          ],
+          "saving_fraction": 0.4196185286103542,
+          "saving_fraction_ci95": [
+            0.3952580735851654,
+            0.44345115637064425
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            18.804557291666665,
+            43.285546874999994
+          ],
+          "difference": 31.05859375,
+          "ratio": 1.0643241421155534,
+          "ratio_ci95": [
+            1.038505791205728,
+            1.0908393499480769
+          ],
+          "saving_fraction": -0.06432414211555337,
+          "saving_fraction_ci95": [
+            -0.09083934994807685,
+            -0.03850579120572806
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            -1497.2323567708333,
+            -1227.657421875
+          ],
+          "difference": -1361.63671875,
+          "ratio": 0.5647254895676421,
+          "ratio_ci95": [
+            0.5354941664432963,
+            0.5951644506405083
+          ],
+          "saving_fraction": 0.4352745104323579,
+          "saving_fraction_ci95": [
+            0.40483554935949173,
+            0.4645058335567037
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            16.956705729166668,
+            41.54300130208333
+          ],
+          "difference": 29.25390625,
+          "ratio": 1.0600516400804003,
+          "ratio_ci95": [
+            1.0344506693767215,
+            1.0864577692638455
+          ],
+          "saving_fraction": -0.060051640080400315,
+          "saving_fraction_ci95": [
+            -0.08645776926384552,
+            -0.03445066937672148
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            0.05118739630963045,
+            0.2874404145366952
+          ],
+          "difference": 0.1692947163713446,
+          "ratio": 1.0354225330474833,
+          "ratio_ci95": [
+            1.0105614817913349,
+            1.060770246505853
+          ],
+          "saving_fraction": -0.03542253304748333,
+          "saving_fraction_ci95": [
+            -0.060770246505853054,
+            -0.01056148179133487
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "trigger_calls": {
+          "ci95": [
+            6.364583333333333,
+            7.040364583333333
+          ],
+          "difference": 6.700520833333333,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        }
+      },
+      "n": 768,
+      "reference": "factorial-margin-every8",
+      "regressed": 16,
+      "routing_changes": 0,
+      "same_device": true
+    }
+  ],
+  "fixed48": {
+    "dev-deer-q80": {
+      "first_correct": 40,
+      "full_reads": 1.7777777777777777,
+      "n": 48,
+      "physical_output_tokens": 1030.6805555555554,
+      "pipeline_seconds": 9.553595297572127,
+      "runs_per_subject": 3
+    },
+    "dev-deer-q95": {
+      "first_correct": 40,
+      "full_reads": 1.7777777777777777,
+      "n": 48,
+      "physical_output_tokens": 1030.6805555555554,
+      "pipeline_seconds": 9.55343496335101,
+      "runs_per_subject": 3
+    },
+    "dev-learned-q70": {
+      "first_correct": 40,
+      "full_reads": 2.118055555555556,
+      "n": 48,
+      "physical_output_tokens": 428.6875,
+      "pipeline_seconds": 4.122980818905893,
+      "runs_per_subject": 3
+    },
+    "dev-learned-q85": {
+      "first_correct": 40,
+      "full_reads": 2.9583333333333335,
+      "n": 48,
+      "physical_output_tokens": 537.3472222222222,
+      "pipeline_seconds": 5.187518034188542,
+      "runs_per_subject": 3
+    },
+    "dev-learned-q95": {
+      "first_correct": 40,
+      "full_reads": 5.354166666666667,
+      "n": 48,
+      "physical_output_tokens": 729.875,
+      "pipeline_seconds": 7.122852935122665,
+      "runs_per_subject": 3
+    },
+    "dev-margin-gap16-q95": {
+      "first_correct": 41,
+      "full_reads": 3.4583333333333335,
+      "n": 48,
+      "physical_output_tokens": 645.0,
+      "pipeline_seconds": 6.226589249349975,
+      "runs_per_subject": 3
+    },
+    "dev-margin-gap8-q70": {
+      "first_correct": 41,
+      "full_reads": 3.722222222222222,
+      "n": 48,
+      "physical_output_tokens": 403.02777777777777,
+      "pipeline_seconds": 3.980698025610764,
+      "runs_per_subject": 3
+    },
+    "dev-margin-gap8-q85": {
+      "first_correct": 41,
+      "full_reads": 4.784722222222222,
+      "n": 48,
+      "physical_output_tokens": 550.1041666666666,
+      "pipeline_seconds": 5.410829407864689,
+      "runs_per_subject": 3
+    },
+    "forced-terminal-prefill-1024": {
+      "first_correct": 40,
+      "full_reads": 1.0,
+      "n": 48,
+      "physical_output_tokens": 1025.9791666666667,
+      "pipeline_seconds": 9.395809297957586,
+      "runs_per_subject": 3
+    }
+  },
+  "full_cohort_seconds_role": "descriptive only: mixed physical devices",
+  "main_accuracy_n": 768,
+  "paired_accuracy": [
+    {
+      "answer_changes": 2,
+      "corrected": 1,
+      "dataset": "all",
+      "latency_source": "GPU0 fixed48 repeated timing, reported separately",
+      "method": "dev-learned-q85",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.00390625,
+            0.00390625
+          ],
+          "difference": 0.0
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.09505208333333331,
+            0.140625
+          ],
+          "difference": 0.1171875
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.14192708333333337,
+            -0.09635416666666663
+          ],
+          "difference": -0.11848958333333333
+        },
+        "full_reads": {
+          "ci95": [
+            0.5403645833333335,
+            0.7565104166666665
+          ],
+          "difference": 0.64453125,
+          "ratio": 1.264,
+          "ratio_ci95": [
+            1.2212758825013992,
+            1.309642677129772
+          ],
+          "saving_fraction": -0.264,
+          "saving_fraction_ci95": [
+            -0.309642677129772,
+            -0.22127588250139918
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            61.77203776041663,
+            86.86868489583337
+          ],
+          "difference": 73.796875,
+          "ratio": 1.1417555619474007,
+          "ratio_ci95": [
+            1.1177603543125798,
+            1.1680670250313625
+          ],
+          "saving_fraction": -0.1417555619474007,
+          "saving_fraction_ci95": [
+            -0.1680670250313625,
+            -0.1177603543125798
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            536.6898111979167,
+            751.4051106770831
+          ],
+          "difference": 640.5794270833334,
+          "ratio": 1.380153200275399,
+          "ratio_ci95": [
+            1.3176373186764017,
+            1.4489371046481847
+          ],
+          "saving_fraction": -0.3801532002753989,
+          "saving_fraction_ci95": [
+            -0.4489371046481847,
+            -0.31763731867640166
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            62.35410156250008,
+            87.62037760416662
+          ],
+          "difference": 74.44140625,
+          "ratio": 1.1423261719236226,
+          "ratio_ci95": [
+            1.1182383165679404,
+            1.1686800712431766
+          ],
+          "saving_fraction": -0.14232617192362262,
+          "saving_fraction_ci95": [
+            -0.16868007124317663,
+            -0.11823831656794037
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": null,
+          "difference": null,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "trigger_calls": {
+          "ci95": [
+            0.79296875,
+            1.111979166666666
+          ],
+          "difference": 0.9453125,
+          "ratio": 1.1402898550724638,
+          "ratio_ci95": [
+            1.1165727297924624,
+            1.1662727450214758
+          ],
+          "saving_fraction": -0.14028985507246383,
+          "saving_fraction_ci95": [
+            -0.16627274502147582,
+            -0.11657272979246236
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "dev-learned-q70",
+      "regressed": 1,
+      "routing_changes": 0,
+      "same_device": true
+    },
+    {
+      "answer_changes": 5,
+      "corrected": 3,
+      "dataset": "all",
+      "latency_source": "GPU0 fixed48 repeated timing, reported separately",
+      "method": "dev-learned-q95",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.0026041666666666297,
+            0.0078125
+          ],
+          "difference": 0.0026041666666666665
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.27734374999999994,
+            0.3411458333333333
+          ],
+          "difference": 0.30859375
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.34375,
+            -0.27994791666666663
+          ],
+          "difference": -0.3111979166666667
+        },
+        "full_reads": {
+          "ci95": [
+            1.6979166666666665,
+            2.0872395833333335
+          ],
+          "difference": 1.890625,
+          "ratio": 1.7744,
+          "ratio_ci95": [
+            1.6909052265481597,
+            1.8620112401520315
+          ],
+          "saving_fraction": -0.7744,
+          "saving_fraction_ci95": [
+            -0.8620112401520315,
+            -0.6909052265481597
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            166.2823893229166,
+            203.7904947916667
+          ],
+          "difference": 184.70052083333334,
+          "ratio": 1.354789089954104,
+          "ratio_ci95": [
+            1.3144058971297763,
+            1.3969875927059734
+          ],
+          "saving_fraction": -0.35478908995410396,
+          "saving_fraction_ci95": [
+            -0.3969875927059734,
+            -0.3144058971297763
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1690.587109375,
+            2069.37431640625
+          ],
+          "difference": 1878.6536458333333,
+          "ratio": 2.114890933860228,
+          "ratio_ci95": [
+            1.9858595945421074,
+            2.2513639534910057
+          ],
+          "saving_fraction": -1.1148909338602282,
+          "saving_fraction_ci95": [
+            -1.2513639534910057,
+            -0.9858595945421074
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            167.9929361979167,
+            205.77789713541665
+          ],
+          "difference": 186.59114583333334,
+          "ratio": 1.3567477407951407,
+          "ratio_ci95": [
+            1.3162798660629662,
+            1.399145004713518
+          ],
+          "saving_fraction": -0.3567477407951407,
+          "saving_fraction_ci95": [
+            -0.3991450047135181,
+            -0.3162798660629662
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": null,
+          "difference": null,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "trigger_calls": {
+          "ci95": [
+            2.152343750000001,
+            2.634114583333334
+          ],
+          "difference": 2.390625,
+          "ratio": 1.3547826086956523,
+          "ratio_ci95": [
+            1.3143441651646641,
+            1.3979061775084558
+          ],
+          "saving_fraction": -0.35478260869565226,
+          "saving_fraction_ci95": [
+            -0.3979061775084558,
+            -0.3143441651646641
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "dev-learned-q70",
+      "regressed": 1,
+      "routing_changes": 0,
+      "same_device": true
+    },
+    {
+      "answer_changes": 53,
+      "corrected": 23,
+      "dataset": "all",
+      "latency_source": "GPU0 fixed48 repeated timing, reported separately",
+      "method": "dev-margin-gap8-q70",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.01692708333333337,
+            0.01692708333333337
+          ],
+          "difference": 0.0
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            -0.07421874999999997,
+            -0.015625
+          ],
+          "difference": -0.044270833333333336
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.09635416666666669,
+            -0.01692708333333337
+          ],
+          "difference": -0.057291666666666664
+        },
+        "full_reads": {
+          "ci95": [
+            1.6601562500000004,
+            1.989583333333333
+          ],
+          "difference": 1.8229166666666667,
+          "ratio": 1.7466666666666668,
+          "ratio_ci95": [
+            1.6700493610142684,
+            1.8293563838039093
+          ],
+          "saving_fraction": -0.7466666666666668,
+          "saving_fraction_ci95": [
+            -0.8293563838039093,
+            -0.6700493610142684
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            -68.33147786458335,
+            -18.203873697916656
+          ],
+          "difference": -43.524739583333336,
+          "ratio": 0.9163938321473681,
+          "ratio_ci95": [
+            0.871881798257554,
+            0.964127099038875
+          ],
+          "saving_fraction": 0.08360616785263186,
+          "saving_fraction_ci95": [
+            0.035872900961125054,
+            0.12811820174244604
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1247.7056966145835,
+            1556.2844401041666
+          ],
+          "difference": 1402.2473958333333,
+          "ratio": 1.8321666487652255,
+          "ratio_ci95": [
+            1.7259593824957695,
+            1.9475128391844179
+          ],
+          "saving_fraction": -0.8321666487652255,
+          "saving_fraction_ci95": [
+            -0.9475128391844179,
+            -0.7259593824957695
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            -66.60332031249997,
+            -16.26930338541667
+          ],
+          "difference": -41.701822916666664,
+          "ratio": 0.9202693619457791,
+          "ratio_ci95": [
+            0.8756972284189464,
+            0.968112489938527
+          ],
+          "saving_fraction": 0.07973063805422087,
+          "saving_fraction_ci95": [
+            0.031887510061472946,
+            0.12430277158105363
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": null,
+          "difference": null,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        },
+        "reasoning_rate": {
+          "ci95": [
+            -0.13802083333333326,
+            -0.06510416666666663
+          ],
+          "difference": -0.1015625
+        },
+        "trigger_calls": {
+          "ci95": [
+            -7.06640625,
+            -6.41015625
+          ],
+          "difference": -6.73828125,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "dev-learned-q70",
+      "regressed": 23,
+      "routing_changes": 234,
+      "same_device": true
+    },
+    {
+      "answer_changes": 53,
+      "corrected": 25,
+      "dataset": "all",
+      "latency_source": "GPU0 fixed48 repeated timing, reported separately",
+      "method": "dev-margin-gap8-q85",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.01171875,
+            0.0234375
+          ],
+          "difference": 0.005208333333333333
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.08463541666666663,
+            0.14973958333333334
+          ],
+          "difference": 0.1171875
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.25651041666666663,
+            -0.18229166666666669
+          ],
+          "difference": -0.21875
+        },
+        "full_reads": {
+          "ci95": [
+            2.46484375,
+            2.830729166666667
+          ],
+          "difference": 2.6458333333333335,
+          "ratio": 2.083733333333333,
+          "ratio_ci95": [
+            1.991608752704502,
+            2.1817710187979085
+          ],
+          "saving_fraction": -1.083733333333333,
+          "saving_fraction_ci95": [
+            -1.1817710187979085,
+            -0.9916087527045021
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            34.57174479166667,
+            89.33938802083328
+          ],
+          "difference": 61.313802083333336,
+          "ratio": 1.1177769718494805,
+          "ratio_ci95": [
+            1.0651152239737551,
+            1.175976036515782
+          ],
+          "saving_fraction": -0.11777697184948055,
+          "saving_fraction_ci95": [
+            -0.17597603651578209,
+            -0.06511522397375513
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            2095.2696614583333,
+            2439.9194661458337
+          ],
+          "difference": 2267.0950520833335,
+          "ratio": 2.345412298521856,
+          "ratio_ci95": [
+            2.213943300806554,
+            2.4881823845326583
+          ],
+          "saving_fraction": -1.3454122985218562,
+          "saving_fraction_ci95": [
+            -1.4881823845326583,
+            -1.2139433008065539
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            37.020768229166706,
+            92.11959635416663
+          ],
+          "difference": 63.959635416666664,
+          "ratio": 1.122285842316214,
+          "ratio_ci95": [
+            1.0695306022166742,
+            1.180513965748926
+          ],
+          "saving_fraction": -0.12228584231621409,
+          "saving_fraction_ci95": [
+            -0.1805139657489261,
+            -0.06953060221667418
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": null,
+          "difference": null,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        },
+        "reasoning_rate": {
+          "ci95": [
+            -0.13802083333333326,
+            -0.06510416666666663
+          ],
+          "difference": -0.1015625
+        },
+        "trigger_calls": {
+          "ci95": [
+            -7.06640625,
+            -6.41015625
+          ],
+          "difference": -6.73828125,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "dev-learned-q70",
+      "regressed": 21,
+      "routing_changes": 234,
+      "same_device": true
+    },
+    {
+      "answer_changes": 52,
+      "corrected": 23,
+      "dataset": "all",
+      "latency_source": "GPU0 fixed48 repeated timing, reported separately",
+      "method": "dev-margin-gap16-q95",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.01692708333333337,
+            0.01822916666666663
+          ],
+          "difference": 0.0
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.2916666666666667,
+            0.36197916666666663
+          ],
+          "difference": 0.3268229166666667
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.46484375,
+            -0.3984375
+          ],
+          "difference": -0.4309895833333333
+        },
+        "full_reads": {
+          "ci95": [
+            0.9218424479166667,
+            1.16796875
+          ],
+          "difference": 1.0442708333333333,
+          "ratio": 1.4277333333333333,
+          "ratio_ci95": [
+            1.3657521205922707,
+            1.4936105240621342
+          ],
+          "saving_fraction": -0.4277333333333333,
+          "saving_fraction_ci95": [
+            -0.49361052406213424,
+            -0.3657521205922707
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            102.3416341145833,
+            162.6277669270833
+          ],
+          "difference": 131.9921875,
+          "ratio": 1.2535422632967748,
+          "ratio_ci95": [
+            1.1925825969537656,
+            1.3212573329530142
+          ],
+          "saving_fraction": -0.25354226329677476,
+          "saving_fraction_ci95": [
+            -0.3212573329530142,
+            -0.19258259695376556
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1052.5667317708335,
+            1300.7094401041663
+          ],
+          "difference": 1175.8450520833333,
+          "ratio": 1.6978077045226767,
+          "ratio_ci95": [
+            1.6012877401883832,
+            1.8043990486925237
+          ],
+          "saving_fraction": -0.6978077045226767,
+          "saving_fraction_ci95": [
+            -0.8043990486925237,
+            -0.6012877401883832
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            103.31289062500004,
+            163.73805338541666
+          ],
+          "difference": 133.03645833333334,
+          "ratio": 1.2543553486519456,
+          "ratio_ci95": [
+            1.19341774519611,
+            1.3219592809293557
+          ],
+          "saving_fraction": -0.25435534865194565,
+          "saving_fraction_ci95": [
+            -0.32195928092935566,
+            -0.1934177451961101
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": null,
+          "difference": null,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        },
+        "reasoning_rate": {
+          "ci95": [
+            -0.13802083333333326,
+            -0.06510416666666663
+          ],
+          "difference": -0.1015625
+        },
+        "trigger_calls": {
+          "ci95": [
+            -7.06640625,
+            -6.41015625
+          ],
+          "difference": -6.73828125,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "dev-learned-q70",
+      "regressed": 23,
+      "routing_changes": 234,
+      "same_device": true
+    },
+    {
+      "answer_changes": 71,
+      "corrected": 29,
+      "dataset": "all",
+      "latency_source": "GPU0 fixed48 repeated timing, reported separately",
+      "method": "dev-deer-q80",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.01692708333333337,
+            0.02083333333333337
+          ],
+          "difference": 0.0013020833333333333
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.6145833333333334,
+            0.6822916666666666
+          ],
+          "difference": 0.6484375
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.4947916666666667,
+            -0.4270833333333333
+          ],
+          "difference": -0.4609375
+        },
+        "full_reads": {
+          "ci95": [
+            -0.8268229166666667,
+            -0.5716145833333333
+          ],
+          "difference": -0.69921875,
+          "ratio": 0.7136,
+          "ratio_ci95": [
+            0.6737359096350887,
+            0.7565793088490457
+          ],
+          "saving_fraction": 0.2864,
+          "saving_fraction_ci95": [
+            0.24342069115095433,
+            0.32626409036491133
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            463.23802083333334,
+            513.4429036458332
+          ],
+          "difference": 488.1158854166667,
+          "ratio": 1.9376161474682043,
+          "ratio_ci95": [
+            1.8502304022842264,
+            2.0355175793889253
+          ],
+          "saving_fraction": -0.9376161474682043,
+          "saving_fraction_ci95": [
+            -1.0355175793889253,
+            -0.8502304022842264
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1178.2783528645834,
+            1505.9701822916668
+          ],
+          "difference": 1341.7239583333333,
+          "ratio": 1.796248888243235,
+          "ratio_ci95": [
+            1.666963218004133,
+            1.9404426513121937
+          ],
+          "saving_fraction": -0.796248888243235,
+          "saving_fraction_ci95": [
+            -0.9404426513121937,
+            -0.6669632180041329
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            473.62864583333334,
+            524.3390950520833
+          ],
+          "difference": 498.8541666666667,
+          "ratio": 1.9537703203963257,
+          "ratio_ci95": [
+            1.8655910051016904,
+            2.0522538775652217
+          ],
+          "saving_fraction": -0.9537703203963257,
+          "saving_fraction_ci95": [
+            -1.0522538775652217,
+            -0.8655910051016904
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": null,
+          "difference": null,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.22135416666666663,
+            0.27994791666666663
+          ],
+          "difference": 0.25
+        },
+        "trigger_calls": {
+          "ci95": [
+            -7.06640625,
+            -6.41015625
+          ],
+          "difference": -6.73828125,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "dev-learned-q70",
+      "regressed": 28,
+      "routing_changes": 192,
+      "same_device": true
+    },
+    {
+      "answer_changes": 71,
+      "corrected": 29,
+      "dataset": "all",
+      "latency_source": "GPU0 fixed48 repeated timing, reported separately",
+      "method": "dev-deer-q95",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.01692708333333337,
+            0.02083333333333337
+          ],
+          "difference": 0.0013020833333333333
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.6315104166666667,
+            0.6953125
+          ],
+          "difference": 0.6627604166666666
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.5091145833333334,
+            -0.4427083333333333
+          ],
+          "difference": -0.4752604166666667
+        },
+        "full_reads": {
+          "ci95": [
+            -0.8281575520833335,
+            -0.5729166666666665
+          ],
+          "difference": -0.7005208333333334,
+          "ratio": 0.7130666666666667,
+          "ratio_ci95": [
+            0.6732257996383758,
+            0.756004695278683
+          ],
+          "saving_fraction": 0.28693333333333326,
+          "saving_fraction_ci95": [
+            0.24399530472131703,
+            0.3267742003616242
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            468.1716796875,
+            517.4675130208333
+          ],
+          "difference": 492.65234375,
+          "ratio": 1.9463301777071897,
+          "ratio_ci95": [
+            1.8586251083748515,
+            2.043908781307943
+          ],
+          "saving_fraction": -0.9463301777071897,
+          "saving_fraction_ci95": [
+            -1.0439087813079428,
+            -0.8586251083748515
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1196.508658854167,
+            1522.707389322917
+          ],
+          "difference": 1358.7630208333333,
+          "ratio": 1.806360755507784,
+          "ratio_ci95": [
+            1.676850564338967,
+            1.9507189334304098
+          ],
+          "saving_fraction": -0.8063607555077841,
+          "saving_fraction_ci95": [
+            -0.9507189334304098,
+            -0.6768505643389671
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            478.6214518229167,
+            528.5601236979165
+          ],
+          "difference": 503.3841145833333,
+          "ratio": 1.9624312280614407,
+          "ratio_ci95": [
+            1.8741049679960047,
+            2.0608452218511424
+          ],
+          "saving_fraction": -0.9624312280614407,
+          "saving_fraction_ci95": [
+            -1.0608452218511424,
+            -0.8741049679960047
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": null,
+          "difference": null,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.22135416666666663,
+            0.27994791666666663
+          ],
+          "difference": 0.25
+        },
+        "trigger_calls": {
+          "ci95": [
+            -7.06640625,
+            -6.41015625
+          ],
+          "difference": -6.73828125,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "dev-learned-q70",
+      "regressed": 28,
+      "routing_changes": 192,
+      "same_device": true
+    },
+    {
+      "answer_changes": 75,
+      "corrected": 28,
+      "dataset": "all",
+      "latency_source": "GPU0 fixed48 repeated timing, reported separately",
+      "method": "forced-terminal-prefill-1024",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.0234375,
+            0.015625
+          ],
+          "difference": -0.00390625
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.6783854166666667,
+            0.7370117187499996
+          ],
+          "difference": 0.7083333333333334
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.5091145833333334,
+            -0.4427083333333333
+          ],
+          "difference": -0.4752604166666667
+        },
+        "full_reads": {
+          "ci95": [
+            -1.5546875,
+            -1.3319986979166671
+          ],
+          "difference": -1.44140625,
+          "ratio": 0.4096,
+          "ratio_ci95": [
+            0.39143730886850153,
+            0.4288167092445467
+          ],
+          "saving_fraction": 0.5904,
+          "saving_fraction_ci95": [
+            0.5711832907554533,
+            0.6085626911314985
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            477.02255859375,
+            526.4551757812499
+          ],
+          "difference": 501.5690104166667,
+          "ratio": 1.9634580993709594,
+          "ratio_ci95": [
+            1.8749081847556142,
+            2.0622362329943384
+          ],
+          "saving_fraction": -0.9634580993709594,
+          "saving_fraction_ci95": [
+            -1.0622362329943384,
+            -0.8749081847556142
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            -260.893359375,
+            -53.51142578125006
+          ],
+          "difference": -156.14973958333334,
+          "ratio": 0.9073326105787471,
+          "ratio_ci95": [
+            0.8543328733747865,
+            0.9661565883893017
+          ],
+          "saving_fraction": 0.09266738942125285,
+          "saving_fraction_ci95": [
+            0.03384341161069826,
+            0.14566712662521353
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            478.5023763020834,
+            528.1146484374999
+          ],
+          "difference": 503.1276041666667,
+          "ratio": 1.9619408001194951,
+          "ratio_ci95": [
+            1.8736125876001828,
+            2.0605092992155454
+          ],
+          "saving_fraction": -0.9619408001194951,
+          "saving_fraction_ci95": [
+            -1.0605092992155454,
+            -0.8736125876001828
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": null,
+          "difference": null,
+          "ratio": null,
+          "ratio_ci95": null,
+          "saving_fraction": null,
+          "saving_fraction_ci95": null
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.22135416666666663,
+            0.27994791666666663
+          ],
+          "difference": 0.25
+        },
+        "trigger_calls": {
+          "ci95": [
+            -7.06640625,
+            -6.41015625
+          ],
+          "difference": -6.73828125,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 768,
+      "reference": "dev-learned-q70",
+      "regressed": 31,
+      "routing_changes": 192,
+      "same_device": true
+    }
+  ],
+  "paired_fixed48_timing": [
+    {
+      "answer_changes": 0,
+      "corrected": 0,
+      "dataset": "all",
+      "method": "dev-learned-q85",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.041666666666666664,
+            0.20833333333333337
+          ],
+          "difference": 0.125
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.20833333333333337,
+            -0.04166666666666663
+          ],
+          "difference": -0.125
+        },
+        "full_reads": {
+          "ci95": [
+            0.41666666666666674,
+            1.3611111111111107
+          ],
+          "difference": 0.8402777777777777,
+          "ratio": 1.3967213114754098,
+          "ratio_ci95": [
+            1.2,
+            1.6428680313588848
+          ],
+          "saving_fraction": -0.3967213114754098,
+          "saving_fraction_ci95": [
+            -0.6428680313588848,
+            -0.19999999999999996
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            54.31874999999996,
+            168.17378472222225
+          ],
+          "difference": 107.81944444444444,
+          "ratio": 1.252759417836095,
+          "ratio_ci95": [
+            1.1264990977288583,
+            1.4143639612482173
+          ],
+          "saving_fraction": -0.252759417836095,
+          "saving_fraction_ci95": [
+            -0.4143639612482173,
+            -0.12649909772885826
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            419.18628472222224,
+            1404.8548611111103
+          ],
+          "difference": 860.1319444444443,
+          "ratio": 1.68080206232033,
+          "ratio_ci95": [
+            1.3350679674454493,
+            2.1215139875829534
+          ],
+          "saving_fraction": -0.6808020623203299,
+          "saving_fraction_ci95": [
+            -1.1215139875829534,
+            -0.3350679674454493
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            54.826215277777806,
+            169.39600694444448
+          ],
+          "difference": 108.65972222222221,
+          "ratio": 1.2534707035363108,
+          "ratio_ci95": [
+            1.1271830052454253,
+            1.4152889335057128
+          ],
+          "saving_fraction": -0.25347070353631085,
+          "saving_fraction_ci95": [
+            -0.41528893350571283,
+            -0.12718300524542525
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            0.5416699300178148,
+            1.6526380401317302
+          ],
+          "difference": 1.064537215282649,
+          "ratio": 1.2581960144954407,
+          "ratio_ci95": [
+            1.1308940858544956,
+            1.4200075603051376
+          ],
+          "saving_fraction": -0.2581960144954407,
+          "saving_fraction_ci95": [
+            -0.42000756030513764,
+            -0.13089408585449558
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "trigger_calls": {
+          "ci95": [
+            0.7638888888888893,
+            2.4236111111111116
+          ],
+          "difference": 1.5416666666666667,
+          "ratio": 1.2835249042145593,
+          "ratio_ci95": [
+            1.1385677815186843,
+            1.471170169988212
+          ],
+          "saving_fraction": -0.28352490421455934,
+          "saving_fraction_ci95": [
+            -0.47117016998821204,
+            -0.13856778151868432
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "dev-learned-q70",
+      "regressed": 0,
+      "routing_changes": 0,
+      "same_device": true
+    },
+    {
+      "answer_changes": 0,
+      "corrected": 0,
+      "dataset": "all",
+      "method": "dev-learned-q95",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.3541666666666667,
+            0.6458333333333333
+          ],
+          "difference": 0.5
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.6458333333333333,
+            -0.3541666666666667
+          ],
+          "difference": -0.5
+        },
+        "full_reads": {
+          "ci95": [
+            2.3819444444444446,
+            4.124999999999999
+          ],
+          "difference": 3.2361111111111107,
+          "ratio": 2.527868852459016,
+          "ratio_ci95": [
+            2.1561458706418497,
+            2.929733537451189
+          ],
+          "saving_fraction": -1.527868852459016,
+          "saving_fraction_ci95": [
+            -1.929733537451189,
+            -1.1561458706418497
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            222.8743055555555,
+            371.43125
+          ],
+          "difference": 297.9513888888889,
+          "ratio": 1.6984827271839285,
+          "ratio_ci95": [
+            1.515292711872251,
+            1.9247811322449622
+          ],
+          "saving_fraction": -0.6984827271839285,
+          "saving_fraction_ci95": [
+            -0.9247811322449622,
+            -0.515292711872251
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            2377.9236111111113,
+            4123.775520833332
+          ],
+          "difference": 3236.006944444444,
+          "ratio": 3.5613281958544722,
+          "ratio_ci95": [
+            2.8977757891809786,
+            4.291229683781622
+          ],
+          "saving_fraction": -2.5613281958544722,
+          "saving_fraction_ci95": [
+            -3.291229683781622,
+            -1.8977757891809786
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            225.32638888888897,
+            375.5557291666667
+          ],
+          "difference": 301.1875,
+          "ratio": 1.7025805511007435,
+          "ratio_ci95": [
+            1.518665481203596,
+            1.9296304535769409
+          ],
+          "saving_fraction": -0.7025805511007435,
+          "saving_fraction_ci95": [
+            -0.9296304535769409,
+            -0.518665481203596
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            2.252565775311006,
+            3.723572761296318
+          ],
+          "difference": 2.999872116216769,
+          "ratio": 1.727597883177356,
+          "ratio_ci95": [
+            1.5397653395603845,
+            1.9551352968430218
+          ],
+          "saving_fraction": -0.727597883177356,
+          "saving_fraction_ci95": [
+            -0.9551352968430218,
+            -0.5397653395603845
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "trigger_calls": {
+          "ci95": [
+            3.1180555555555545,
+            5.208333333333335
+          ],
+          "difference": 4.166666666666667,
+          "ratio": 1.7662835249042144,
+          "ratio_ci95": [
+            1.5591394763156923,
+            2.0300808840282523
+          ],
+          "saving_fraction": -0.7662835249042144,
+          "saving_fraction_ci95": [
+            -1.0300808840282523,
+            -0.5591394763156923
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "dev-learned-q70",
+      "regressed": 0,
+      "routing_changes": 0,
+      "same_device": true
+    },
+    {
+      "answer_changes": 3,
+      "corrected": 2,
+      "dataset": "all",
+      "method": "dev-margin-gap8-q70",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.04166666666666663,
+            0.08333333333333337
+          ],
+          "difference": 0.020833333333333332
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.02083333333333333,
+            0.16666666666666666
+          ],
+          "difference": 0.08333333333333333
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.33333333333333337,
+            -0.08333333333333326
+          ],
+          "difference": -0.20833333333333334
+        },
+        "full_reads": {
+          "ci95": [
+            1.0486111111111107,
+            2.180555555555555
+          ],
+          "difference": 1.6041666666666667,
+          "ratio": 1.757377049180328,
+          "ratio_ci95": [
+            1.4877203541197483,
+            2.0550117561946095
+          ],
+          "saving_fraction": -0.757377049180328,
+          "saving_fraction_ci95": [
+            -1.0550117561946095,
+            -0.48772035411974834
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            -116.05000000000003,
+            71.59687499999995
+          ],
+          "difference": -27.26388888888889,
+          "ratio": 0.9360856966105557,
+          "ratio_ci95": [
+            0.7431822641331229,
+            1.1893475336356423
+          ],
+          "saving_fraction": 0.06391430338944426,
+          "saving_fraction_ci95": [
+            -0.18934753363564227,
+            0.25681773586687706
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            751.6010416666667,
+            1824.8352430555558
+          ],
+          "difference": 1277.736111111111,
+          "ratio": 2.011339463862673,
+          "ratio_ci95": [
+            1.5895091633918195,
+            2.507103134214005
+          ],
+          "saving_fraction": -1.0113394638626731,
+          "saving_fraction_ci95": [
+            -1.507103134214005,
+            -0.5895091633918195
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            -114.82760416666675,
+            73.67621527777766
+          ],
+          "difference": -25.65972222222223,
+          "ratio": 0.9401435259432053,
+          "ratio_ci95": [
+            0.7470435165282813,
+            1.1935652215236925
+          ],
+          "saving_fraction": 0.05985647405679473,
+          "saving_fraction_ci95": [
+            -0.1935652215236925,
+            0.25295648347171873
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            -0.996966219761412,
+            0.7999643306806522
+          ],
+          "difference": -0.14228279329512983,
+          "ratio": 0.9654903091853609,
+          "ratio_ci95": [
+            0.7708022536596095,
+            1.2174184659149307
+          ],
+          "saving_fraction": 0.03450969081463906,
+          "saving_fraction_ci95": [
+            -0.21741846591493075,
+            0.22919774634039047
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            -0.29166666666666663,
+            0.0
+          ],
+          "difference": -0.14583333333333334
+        },
+        "trigger_calls": {
+          "ci95": [
+            -6.423611111111112,
+            -4.402604166666669
+          ],
+          "difference": -5.4375,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "dev-learned-q70",
+      "regressed": 1,
+      "routing_changes": 17,
+      "same_device": true
+    },
+    {
+      "answer_changes": 3,
+      "corrected": 2,
+      "dataset": "all",
+      "method": "dev-margin-gap8-q85",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.04166666666666663,
+            0.08333333333333337
+          ],
+          "difference": 0.020833333333333332
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.08333333333333333,
+            0.2708333333333333
+          ],
+          "difference": 0.16666666666666666
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.43750000000000006,
+            -0.18749999999999994
+          ],
+          "difference": -0.3125
+        },
+        "full_reads": {
+          "ci95": [
+            1.9652777777777777,
+            3.381944444444444
+          ],
+          "difference": 2.6666666666666665,
+          "ratio": 2.259016393442623,
+          "ratio_ci95": [
+            1.9222937570804335,
+            2.6407004434724493
+          ],
+          "saving_fraction": -1.2590163934426228,
+          "saving_fraction_ci95": [
+            -1.6407004434724493,
+            -0.9222937570804335
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            5.037673611111135,
+            238.34357638888872
+          ],
+          "difference": 118.75,
+          "ratio": 1.2783837462963563,
+          "ratio_ci95": [
+            1.010530582984015,
+            1.6379496606974704
+          ],
+          "saving_fraction": -0.2783837462963563,
+          "saving_fraction_ci95": [
+            -0.6379496606974704,
+            -0.010530582984014991
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1632.0789930555552,
+            3002.706423611111
+          ],
+          "difference": 2317.4236111111113,
+          "ratio": 2.83426134083801,
+          "ratio_ci95": [
+            2.2749063155226485,
+            3.5010347777505837
+          ],
+          "saving_fraction": -1.83426134083801,
+          "saving_fraction_ci95": [
+            -2.5010347777505837,
+            -1.2749063155226485
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            7.136111111111194,
+            241.35729166666636
+          ],
+          "difference": 121.41666666666667,
+          "ratio": 1.2832288477426252,
+          "ratio_ci95": [
+            1.0149885750294156,
+            1.6425690917049518
+          ],
+          "saving_fraction": -0.28322884774262524,
+          "saving_fraction_ci95": [
+            -0.6425690917049518,
+            -0.01498857502941564
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            0.19264485344287655,
+            2.4368376251362656
+          ],
+          "difference": 1.2878485889587967,
+          "ratio": 1.3123586175937023,
+          "ratio_ci95": [
+            1.0427491011501533,
+            1.6709695165774805
+          ],
+          "saving_fraction": -0.3123586175937023,
+          "saving_fraction_ci95": [
+            -0.6709695165774805,
+            -0.04274910115015329
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            -0.29166666666666663,
+            0.0
+          ],
+          "difference": -0.14583333333333334
+        },
+        "trigger_calls": {
+          "ci95": [
+            -6.423611111111112,
+            -4.402604166666669
+          ],
+          "difference": -5.4375,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "dev-learned-q70",
+      "regressed": 1,
+      "routing_changes": 17,
+      "same_device": true
+    },
+    {
+      "answer_changes": 3,
+      "corrected": 2,
+      "dataset": "all",
+      "method": "dev-margin-gap16-q95",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.04166666666666663,
+            0.08333333333333337
+          ],
+          "difference": 0.020833333333333332
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.375,
+            0.625
+          ],
+          "difference": 0.5
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.7708333333333334,
+            -0.5
+          ],
+          "difference": -0.6458333333333334
+        },
+        "full_reads": {
+          "ci95": [
+            0.9236111111111107,
+            1.770833333333333
+          ],
+          "difference": 1.3402777777777777,
+          "ratio": 1.6327868852459015,
+          "ratio_ci95": [
+            1.4247436423297786,
+            1.8699999999999999
+          ],
+          "saving_fraction": -0.6327868852459015,
+          "saving_fraction_ci95": [
+            -0.8699999999999999,
+            -0.42474364232977857
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            90.48611111111114,
+            341.4383680555555
+          ],
+          "difference": 214.97222222222226,
+          "ratio": 1.503955979552632,
+          "ratio_ci95": [
+            1.1988993048373422,
+            1.9118701182830515
+          ],
+          "saving_fraction": -0.503955979552632,
+          "saving_fraction_ci95": [
+            -0.9118701182830515,
+            -0.1988993048373422
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1109.6685763888888,
+            2006.3057291666664
+          ],
+          "difference": 1553.6666666666667,
+          "ratio": 2.229740945743166,
+          "ratio_ci95": [
+            1.8347945469662668,
+            2.7104159898874327
+          ],
+          "saving_fraction": -1.229740945743166,
+          "saving_fraction_ci95": [
+            -1.7104159898874327,
+            -0.8347945469662668
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            91.54687499999997,
+            343.2154513888889
+          ],
+          "difference": 216.3125,
+          "ratio": 1.5045925061962384,
+          "ratio_ci95": [
+            1.2001269176971427,
+            1.9111721283783318
+          ],
+          "saving_fraction": -0.5045925061962384,
+          "saving_fraction_ci95": [
+            -0.9111721283783318,
+            -0.20012691769714275
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            0.9207778335566728,
+            3.303407025025728
+          ],
+          "difference": 2.103608430444082,
+          "ratio": 1.5102154297681918,
+          "ratio_ci95": [
+            1.2102200058644665,
+            1.9084447756537921
+          ],
+          "saving_fraction": -0.5102154297681918,
+          "saving_fraction_ci95": [
+            -0.9084447756537921,
+            -0.21022000586446654
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            -0.29166666666666663,
+            0.0
+          ],
+          "difference": -0.14583333333333334
+        },
+        "trigger_calls": {
+          "ci95": [
+            -6.423611111111112,
+            -4.402604166666669
+          ],
+          "difference": -5.4375,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "dev-learned-q70",
+      "regressed": 1,
+      "routing_changes": 17,
+      "same_device": true
+    },
+    {
+      "answer_changes": 5,
+      "corrected": 2,
+      "dataset": "all",
+      "method": "dev-deer-q80",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.0625,
+            0.08333333333333326
+          ],
+          "difference": 0.0
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.7916666666666666,
+            0.9583333333333334
+          ],
+          "difference": 0.875
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.8125,
+            -0.5625
+          ],
+          "difference": -0.6875
+        },
+        "full_reads": {
+          "ci95": [
+            -0.6527777777777781,
+            -0.0277777777777779
+          ],
+          "difference": -0.34027777777777773,
+          "ratio": 0.839344262295082,
+          "ratio_ci95": [
+            0.7142857142857143,
+            0.9855072463768114
+          ],
+          "saving_fraction": 0.16065573770491803,
+          "saving_fraction_ci95": [
+            0.014492753623188581,
+            0.2857142857142857
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            512.5680555555555,
+            670.5920138888888
+          ],
+          "difference": 589.2430555555555,
+          "ratio": 2.3813531729235176,
+          "ratio_ci95": [
+            2.0237855169166865,
+            2.9304780181178707
+          ],
+          "saving_fraction": -1.3813531729235176,
+          "saving_fraction_ci95": [
+            -1.9304780181178707,
+            -1.0237855169166865
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1471.675347222222,
+            2366.3843749999996
+          ],
+          "difference": 1913.4166666666667,
+          "ratio": 2.514486261274879,
+          "ratio_ci95": [
+            2.06037949784049,
+            3.0902648263262797
+          ],
+          "saving_fraction": -1.5144862612748788,
+          "saving_fraction_ci95": [
+            -2.0902648263262797,
+            -1.06037949784049
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            524.6781249999999,
+            684.0767361111111
+          ],
+          "difference": 601.9930555555555,
+          "ratio": 2.4042701398001003,
+          "ratio_ci95": [
+            2.044863446389446,
+            2.9594205912817584
+          ],
+          "saving_fraction": -1.4042701398001003,
+          "saving_fraction_ci95": [
+            -1.9594205912817584,
+            -1.0448634463894462
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            4.70206409569752,
+            6.199916020377634
+          ],
+          "difference": 5.430614478666231,
+          "ratio": 2.317157347364847,
+          "ratio_ci95": [
+            1.9783122050716517,
+            2.83460882011084
+          ],
+          "saving_fraction": -1.317157347364847,
+          "saving_fraction_ci95": [
+            -1.83460882011084,
+            -0.9783122050716517
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.10416666666666663,
+            0.3125
+          ],
+          "difference": 0.20833333333333334
+        },
+        "trigger_calls": {
+          "ci95": [
+            -6.423611111111112,
+            -4.402604166666669
+          ],
+          "difference": -5.4375,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "dev-learned-q70",
+      "regressed": 2,
+      "routing_changes": 10,
+      "same_device": true
+    },
+    {
+      "answer_changes": 5,
+      "corrected": 2,
+      "dataset": "all",
+      "method": "dev-deer-q95",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.0625,
+            0.08333333333333326
+          ],
+          "difference": 0.0
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.7916666666666666,
+            0.9583333333333334
+          ],
+          "difference": 0.875
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.8125,
+            -0.5625
+          ],
+          "difference": -0.6875
+        },
+        "full_reads": {
+          "ci95": [
+            -0.6527777777777781,
+            -0.0277777777777779
+          ],
+          "difference": -0.34027777777777773,
+          "ratio": 0.839344262295082,
+          "ratio_ci95": [
+            0.7142857142857143,
+            0.9855072463768114
+          ],
+          "saving_fraction": 0.16065573770491803,
+          "saving_fraction_ci95": [
+            0.014492753623188581,
+            0.2857142857142857
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            512.5680555555555,
+            670.5920138888888
+          ],
+          "difference": 589.2430555555555,
+          "ratio": 2.3813531729235176,
+          "ratio_ci95": [
+            2.0237855169166865,
+            2.9304780181178707
+          ],
+          "saving_fraction": -1.3813531729235176,
+          "saving_fraction_ci95": [
+            -1.9304780181178707,
+            -1.0237855169166865
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            1471.675347222222,
+            2366.3843749999996
+          ],
+          "difference": 1913.4166666666667,
+          "ratio": 2.514486261274879,
+          "ratio_ci95": [
+            2.06037949784049,
+            3.0902648263262797
+          ],
+          "saving_fraction": -1.5144862612748788,
+          "saving_fraction_ci95": [
+            -2.0902648263262797,
+            -1.06037949784049
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            524.6781249999999,
+            684.0767361111111
+          ],
+          "difference": 601.9930555555555,
+          "ratio": 2.4042701398001003,
+          "ratio_ci95": [
+            2.044863446389446,
+            2.9594205912817584
+          ],
+          "saving_fraction": -1.4042701398001003,
+          "saving_fraction_ci95": [
+            -1.9594205912817584,
+            -1.0448634463894462
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            4.699140644064432,
+            6.199533123733032
+          ],
+          "difference": 5.430454144445118,
+          "ratio": 2.3171184594271743,
+          "ratio_ci95": [
+            1.9783175721947517,
+            2.836026552159435
+          ],
+          "saving_fraction": -1.3171184594271743,
+          "saving_fraction_ci95": [
+            -1.836026552159435,
+            -0.9783175721947517
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.10416666666666663,
+            0.3125
+          ],
+          "difference": 0.20833333333333334
+        },
+        "trigger_calls": {
+          "ci95": [
+            -6.423611111111112,
+            -4.402604166666669
+          ],
+          "difference": -5.4375,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "dev-learned-q70",
+      "regressed": 2,
+      "routing_changes": 10,
+      "same_device": true
+    },
+    {
+      "answer_changes": 5,
+      "corrected": 2,
+      "dataset": "all",
+      "method": "forced-terminal-prefill-1024",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.0625,
+            0.08333333333333326
+          ],
+          "difference": 0.0
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            0.8125,
+            0.9583333333333334
+          ],
+          "difference": 0.8958333333333334
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            -0.8125,
+            -0.5625
+          ],
+          "difference": -0.6875
+        },
+        "full_reads": {
+          "ci95": [
+            -1.3402777777777781,
+            -0.8958333333333333
+          ],
+          "difference": -1.1180555555555556,
+          "ratio": 0.47213114754098356,
+          "ratio_ci95": [
+            0.4272997032640949,
+            0.5274725274725275
+          ],
+          "saving_fraction": 0.5278688524590165,
+          "saving_fraction_ci95": [
+            0.4725274725274725,
+            0.5727002967359052
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            520.4647569444445,
+            675.2315972222221
+          ],
+          "difference": 595.4097222222222,
+          "ratio": 2.3958095920294333,
+          "ratio_ci95": [
+            2.038283627190884,
+            2.9440106718004904
+          ],
+          "saving_fraction": -1.3958095920294333,
+          "saving_fraction_ci95": [
+            -1.9440106718004904,
+            -1.038283627190884
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            86.48489583333352,
+            455.8196180555557
+          ],
+          "difference": 268.69444444444446,
+          "ratio": 1.2126740357608103,
+          "ratio_ci95": [
+            1.059553108586341,
+            1.4233512623568467
+          ],
+          "saving_fraction": -0.21267403576081034,
+          "saving_fraction_ci95": [
+            -0.4233512623568467,
+            -0.059553108586341
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            522.2755208333334,
+            677.2164930555556
+          ],
+          "difference": 597.2916666666666,
+          "ratio": 2.39330320260485,
+          "ratio_ci95": [
+            2.0376557189211186,
+            2.9388352867329237
+          ],
+          "saving_fraction": -1.3933032026048502,
+          "saving_fraction_ci95": [
+            -1.9388352867329237,
+            -1.0376557189211186
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            4.569628966906748,
+            6.023869691424381
+          ],
+          "difference": 5.272828479051693,
+          "ratio": 2.278887462894123,
+          "ratio_ci95": [
+            1.9477584975185354,
+            2.7839212124303474
+          ],
+          "saving_fraction": -1.2788874628941231,
+          "saving_fraction_ci95": [
+            -1.7839212124303474,
+            -0.9477584975185354
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.10416666666666663,
+            0.3125
+          ],
+          "difference": 0.20833333333333334
+        },
+        "trigger_calls": {
+          "ci95": [
+            -6.423611111111112,
+            -4.402604166666669
+          ],
+          "difference": -5.4375,
+          "ratio": 0.0,
+          "ratio_ci95": [
+            0.0,
+            0.0
+          ],
+          "saving_fraction": 1.0,
+          "saving_fraction_ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "dev-learned-q70",
+      "regressed": 2,
+      "routing_changes": 10,
+      "same_device": true
+    }
+  ],
+  "repeat_stability": {
+    "answer_changed": 1,
+    "method_subject_pairs": 432,
+    "trace_changed": 54
+  },
+  "scope": "Observed768 result synthesis; no new predictions collected",
+  "serial": [
+    {
+      "answer_changes": 1,
+      "corrected": 0,
+      "dataset": "all",
+      "method": "execution-serial",
+      "metrics": {
+        "accuracy": {
+          "ci95": [
+            -0.0625,
+            0.0
+          ],
+          "difference": -0.020833333333333332
+        },
+        "budget_hit_rate": {
+          "ci95": [
+            -0.0625,
+            0.0
+          ],
+          "difference": -0.020833333333333332
+        },
+        "cached_input_tokens": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "early_stop_rate": {
+          "ci95": [
+            0.0,
+            0.0625
+          ],
+          "difference": 0.020833333333333332
+        },
+        "full_reads": {
+          "ci95": [
+            -0.3125,
+            0.10416666666666696
+          ],
+          "difference": -0.0625,
+          "ratio": 0.975,
+          "ratio_ci95": [
+            0.884608843537415,
+            1.0458715596330275
+          ],
+          "saving_fraction": 0.025000000000000022,
+          "saving_fraction_ci95": [
+            -0.04587155963302747,
+            0.11539115646258502
+          ]
+        },
+        "generation_tokens": {
+          "ci95": [
+            -34.16770833333335,
+            -0.45729166666666526
+          ],
+          "difference": -16.395833333333332,
+          "ratio": 0.9669563756980308,
+          "ratio_ci95": [
+            0.9318531952772505,
+            0.9990852713700247
+          ],
+          "saving_fraction": 0.033043624301969166,
+          "saving_fraction_ci95": [
+            0.0009147286299753254,
+            0.06814680472274948
+          ]
+        },
+        "input_tokens": {
+          "ci95": [
+            16.413541666666518,
+            695.5463541666667
+          ],
+          "difference": 358.4583333333333,
+          "ratio": 1.2153873116018226,
+          "ratio_ci95": [
+            1.0098732442582803,
+            1.4031257840034703
+          ],
+          "saving_fraction": -0.21538731160182256,
+          "saving_fraction_ci95": [
+            -0.4031257840034703,
+            -0.00987324425828029
+          ]
+        },
+        "invalid_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "physical_output_tokens": {
+          "ci95": [
+            -34.333854166666704,
+            -0.3958333333333698
+          ],
+          "difference": -16.458333333333332,
+          "ratio": 0.966996699669967,
+          "ratio_ci95": [
+            0.9318517447733108,
+            0.9991559875703713
+          ],
+          "saving_fraction": 0.03300330033003296,
+          "saving_fraction_ci95": [
+            0.0008440124296287266,
+            0.06814825522668921
+          ]
+        },
+        "pipeline_seconds": {
+          "ci95": [
+            -0.2768566071648412,
+            0.05518093790758735
+          ],
+          "difference": -0.1032186914073666,
+          "ratio": 0.9784222105626105,
+          "ratio_ci95": [
+            0.9424039089640639,
+            1.011759108621972
+          ],
+          "saving_fraction": 0.021577789437389527,
+          "saving_fraction_ci95": [
+            -0.011759108621971937,
+            0.0575960910359361
+          ]
+        },
+        "reasoning_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "difference": 0.0
+        },
+        "trigger_calls": {
+          "ci95": [
+            -0.5,
+            0.04166666666666696
+          ],
+          "difference": -0.20833333333333334,
+          "ratio": 0.9675324675324675,
+          "ratio_ci95": [
+            0.9219207488738739,
+            1.0077016129032257
+          ],
+          "saving_fraction": 0.032467532467532534,
+          "saving_fraction_ci95": [
+            -0.007701612903225685,
+            0.07807925112612613
+          ]
+        }
+      },
+      "n": 48,
+      "reference": "execution-concurrent",
+      "regressed": 1,
+      "routing_changes": 0,
+      "same_device": true
+    }
+  ],
+  "sources": {
+    "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/same-device48/analysis.json": "4e1f47710f8424b735338962d675fd27cff904c44c964d48f15f49e740d84c34",
+    "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/controls/analysis.json": "a6b0af112687e935dc620146dd92f9cab06fda01d0c27a30a2920a0a74628849",
+    "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/development/selection.json": "d0ba530824d501bf6d670f0c455fdee619d997370f58cba7795dfdcc747d53cb",
+    "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/resume-parallel-v1/combined/calibrated/analysis-completion.json": "2401f4688827a2fe416e0261dc32ec608d8ffb535ece9de94676ee4f275c733f",
+    "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/resume-parallel-v1/combined/calibrated/analysis.json": "7f2da1e85b146810d614e73d55bf935a794d0426bf6215f05a4ce197beed6917",
+    "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/serial/analysis.json": "f69bd72f800fa909252dc0906c2aa326fd7ef4d307140b99dbeca9e9cbbeb441"
+  },
+  "summaries": [
+    {
+      "accuracy": 0.84375,
+      "budget_hit_rate": 0.2734375,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.8190104166666666,
+          0.8671875
+        ],
+        "budget_hit_rate": [
+          0.24609375,
+          0.3020833333333333
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.4427083333333333,
+          0.5091145833333334
+        ],
+        "full_reads": [
+          2.3319986979166667,
+          2.5546875
+        ],
+        "generation_tokens": [
+          495.66748046875,
+          545.2527669270833
+        ],
+        "input_tokens": [
+          1582.57626953125,
+          1789.8191080729166
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          498.05712890625,
+          547.74306640625
+        ],
+        "pipeline_seconds": [
+          4.817054868622048,
+          5.292853202979601
+        ],
+        "reasoning_rate": [
+          0.7200520833333334,
+          0.7786458333333334
+        ],
+        "trigger_calls": [
+          6.41015625,
+          7.06640625
+        ]
+      },
+      "correct": 648,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.4752604166666667,
+      "full_reads": 2.44140625,
+      "generation_tokens": 520.5924479166666,
+      "input_tokens": 1685.0559895833333,
+      "invalid_rate": 0.0,
+      "method": "dev-learned-q70",
+      "n": 768,
+      "p95_pipeline_seconds": 9.960365360067225,
+      "physical_output_tokens": 523.0338541666666,
+      "pipeline_seconds": 5.057121388251592,
+      "reasoning_rate": 0.75,
+      "trigger_calls": 6.73828125
+    },
+    {
+      "accuracy": 0.84375,
+      "budget_hit_rate": 0.390625,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.8190104166666666,
+          0.8671875
+        ],
+        "budget_hit_rate": [
+          0.3580729166666667,
+          0.4231770833333333
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.32421875,
+          0.3893229166666667
+        ],
+        "full_reads": [
+          2.9218424479166667,
+          3.2578125
+        ],
+        "generation_tokens": [
+          566.5998046875,
+          621.5703125
+        ],
+        "input_tokens": [
+          2171.548893229167,
+          2485.3775716145833
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          569.6027343750001,
+          624.7946940104167
+        ],
+        "pipeline_seconds": [
+          5.520368743550262,
+          6.051891981246762
+        ],
+        "reasoning_rate": [
+          0.7200520833333334,
+          0.7786458333333334
+        ],
+        "trigger_calls": [
+          7.326822916666667,
+          8.037760416666666
+        ]
+      },
+      "correct": 648,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.3567708333333333,
+      "full_reads": 3.0859375,
+      "generation_tokens": 594.3893229166666,
+      "input_tokens": 2325.6354166666665,
+      "invalid_rate": 0.0,
+      "method": "dev-learned-q85",
+      "n": 768,
+      "p95_pipeline_seconds": 10.194270288315602,
+      "physical_output_tokens": 597.4752604166666,
+      "pipeline_seconds": 5.789231741416491,
+      "reasoning_rate": 0.75,
+      "trigger_calls": 7.68359375
+    },
+    {
+      "accuracy": 0.8463541666666666,
+      "budget_hit_rate": 0.58203125,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.8216145833333334,
+          0.8697916666666666
+        ],
+        "budget_hit_rate": [
+          0.5481770833333334,
+          0.6158854166666666
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.13932291666666666,
+          0.19010416666666666
+        ],
+        "full_reads": [
+          4.102864583333333,
+          4.563802083333333
+        ],
+        "generation_tokens": [
+          675.0739583333333,
+          734.3482096354167
+        ],
+        "input_tokens": [
+          3349.1702473958335,
+          3780.170833333333
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          679.2212890625,
+          738.8676106770833
+        ],
+        "pipeline_seconds": [
+          6.628943167785004,
+          7.209649674629418
+        ],
+        "reasoning_rate": [
+          0.7200520833333334,
+          0.7786458333333334
+        ],
+        "trigger_calls": [
+          8.738248697916667,
+          9.505208333333334
+        ]
+      },
+      "correct": 650,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.1640625,
+      "full_reads": 4.33203125,
+      "generation_tokens": 705.29296875,
+      "input_tokens": 3563.7096354166665,
+      "invalid_rate": 0.0,
+      "method": "dev-learned-q95",
+      "n": 768,
+      "p95_pipeline_seconds": 10.404218588559889,
+      "physical_output_tokens": 709.625,
+      "pipeline_seconds": 6.923578993884196,
+      "reasoning_rate": 0.75,
+      "trigger_calls": 9.12890625
+    },
+    {
+      "accuracy": 0.84375,
+      "budget_hit_rate": 0.22916666666666666,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.8190104166666666,
+          0.8684895833333334
+        ],
+        "budget_hit_rate": [
+          0.20052083333333334,
+          0.2565104166666667
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.3854166666666667,
+          0.4505533854166662
+        ],
+        "full_reads": [
+          4.083333333333333,
+          4.444010416666667
+        ],
+        "generation_tokens": [
+          451.8904296875,
+          502.09140625
+        ],
+        "input_tokens": [
+          2914.2408528645833,
+          3259.9148111979166
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          455.95960286458336,
+          506.5483072916667
+        ],
+        "pipeline_seconds": [
+          4.515859403507435,
+          5.007713709561918
+        ],
+        "reasoning_rate": [
+          0.6184895833333334,
+          0.6770833333333334
+        ],
+        "trigger_calls": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct": 648,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.41796875,
+      "full_reads": 4.264322916666667,
+      "generation_tokens": 477.0677083333333,
+      "input_tokens": 3087.3033854166665,
+      "invalid_rate": 0.0,
+      "method": "dev-margin-gap8-q70",
+      "n": 768,
+      "p95_pipeline_seconds": 10.247168889292515,
+      "physical_output_tokens": 481.33203125,
+      "pipeline_seconds": 4.762060151422095,
+      "reasoning_rate": 0.6484375,
+      "trigger_calls": 0.0
+    },
+    {
+      "accuracy": 0.8489583333333334,
+      "budget_hit_rate": 0.390625,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.82421875,
+          0.8723958333333334
+        ],
+        "budget_hit_rate": [
+          0.3580729166666667,
+          0.4231770833333333
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.22916666666666666,
+          0.28515625
+        ],
+        "full_reads": [
+          4.8828125,
+          5.2890625
+        ],
+        "generation_tokens": [
+          553.7625651041666,
+          609.3595052083333
+        ],
+        "input_tokens": [
+          3759.0773437499997,
+          4145.143326822917
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          558.6580729166667,
+          614.6500976562501
+        ],
+        "pipeline_seconds": [
+          5.530316726121721,
+          6.0768910411158075
+        ],
+        "reasoning_rate": [
+          0.6184895833333334,
+          0.6770833333333334
+        ],
+        "trigger_calls": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct": 652,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.2565104166666667,
+      "full_reads": 5.087239583333333,
+      "generation_tokens": 581.90625,
+      "input_tokens": 3952.1510416666665,
+      "invalid_rate": 0.0,
+      "method": "dev-margin-gap8-q85",
+      "n": 768,
+      "p95_pipeline_seconds": 10.344429594557733,
+      "physical_output_tokens": 586.9934895833334,
+      "pipeline_seconds": 5.806436599948332,
+      "reasoning_rate": 0.6484375,
+      "trigger_calls": 0.0
+    },
+    {
+      "accuracy": 0.84375,
+      "budget_hit_rate": 0.6002604166666666,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.8190104166666666,
+          0.8671875
+        ],
+        "budget_hit_rate": [
+          0.5690104166666666,
+          0.6315104166666666
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.029947916666666668,
+          0.05859375
+        ],
+        "full_reads": [
+          3.37109375,
+          3.5989583333333335
+        ],
+        "generation_tokens": [
+          622.6247721354167,
+          682.0943033854167
+        ],
+        "input_tokens": [
+          2740.280338541667,
+          2978.3054361979166
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          626.0021809895833,
+          685.6968424479167
+        ],
+        "pipeline_seconds": [
+          6.080906357547868,
+          6.65451372626644
+        ],
+        "reasoning_rate": [
+          0.6184895833333334,
+          0.6770833333333334
+        ],
+        "trigger_calls": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct": 648,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.044270833333333336,
+      "full_reads": 3.4856770833333335,
+      "generation_tokens": 652.5846354166666,
+      "input_tokens": 2860.9010416666665,
+      "invalid_rate": 0.0,
+      "method": "dev-margin-gap16-q95",
+      "n": 768,
+      "p95_pipeline_seconds": 10.147554559120909,
+      "physical_output_tokens": 656.0703125,
+      "pipeline_seconds": 6.368845568002143,
+      "reasoning_rate": 0.6484375,
+      "trigger_calls": 0.0
+    },
+    {
+      "accuracy": 0.8450520833333334,
+      "budget_hit_rate": 0.921875,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.8203125,
+          0.8697916666666666
+        ],
+        "budget_hit_rate": [
+          0.90234375,
+          0.9401041666666666
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.006510416666666667,
+          0.0234375
+        ],
+        "full_reads": [
+          1.6861979166666667,
+          1.80078125
+        ],
+        "generation_tokens": [
+          1003.8591796875,
+          1013.10947265625
+        ],
+        "input_tokens": [
+          2909.3992513020835,
+          3146.57548828125
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          1016.8097330729167,
+          1026.5456380208334
+        ],
+        "pipeline_seconds": [
+          9.476443694769326,
+          9.57298568340381
+        ],
+        "reasoning_rate": [
+          1.0,
+          1.0
+        ],
+        "trigger_calls": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct": 649,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.014322916666666666,
+      "full_reads": 1.7421875,
+      "generation_tokens": 1008.7083333333334,
+      "input_tokens": 3026.7799479166665,
+      "invalid_rate": 0.0,
+      "method": "dev-deer-q80",
+      "n": 768,
+      "p95_pipeline_seconds": 10.21405482823029,
+      "physical_output_tokens": 1021.8880208333334,
+      "pipeline_seconds": 9.525989742938691,
+      "reasoning_rate": 1.0,
+      "trigger_calls": 0.0
+    },
+    {
+      "accuracy": 0.8450520833333334,
+      "budget_hit_rate": 0.9361979166666666,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.8203125,
+          0.8697916666666666
+        ],
+        "budget_hit_rate": [
+          0.9192708333333334,
+          0.9518229166666666
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.0,
+          0.0
+        ],
+        "full_reads": [
+          1.6848958333333333,
+          1.7994791666666667
+        ],
+        "generation_tokens": [
+          1009.7018229166666,
+          1016.5325846354167
+        ],
+        "input_tokens": [
+          2925.519010416667,
+          3164.82822265625
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          1022.5755208333334,
+          1030.0497070312501
+        ],
+        "pipeline_seconds": [
+          9.536829902565477,
+          9.615126876094518
+        ],
+        "reasoning_rate": [
+          1.0,
+          1.0
+        ],
+        "trigger_calls": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct": 649,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.0,
+      "full_reads": 1.7408854166666667,
+      "generation_tokens": 1013.2447916666666,
+      "input_tokens": 3043.8190104166665,
+      "invalid_rate": 0.0,
+      "method": "dev-deer-q95",
+      "n": 768,
+      "p95_pipeline_seconds": 10.220299477339722,
+      "physical_output_tokens": 1026.41796875,
+      "pipeline_seconds": 9.576957800372838,
+      "reasoning_rate": 1.0,
+      "trigger_calls": 0.0
+    },
+    {
+      "accuracy": 0.83984375,
+      "budget_hit_rate": 0.9817708333333334,
+      "cached_input_tokens": 0.0,
+      "ci95": {
+        "accuracy": [
+          0.8151041666666666,
+          0.8645833333333334
+        ],
+        "budget_hit_rate": [
+          0.9726236979166667,
+          0.9908854166666666
+        ],
+        "cached_input_tokens": [
+          0.0,
+          0.0
+        ],
+        "early_stop_rate": [
+          0.0,
+          0.0
+        ],
+        "full_reads": [
+          1.0,
+          1.0
+        ],
+        "generation_tokens": [
+          1020.9778645833334,
+          1023.1471354166666
+        ],
+        "input_tokens": [
+          1524.1249674479166,
+          1533.64755859375
+        ],
+        "invalid_rate": [
+          0.0,
+          0.0
+        ],
+        "physical_output_tokens": [
+          1024.9778645833333,
+          1027.1471354166667
+        ],
+        "pipeline_seconds": [
+          9.445168567811,
+          9.479778282874365
+        ],
+        "reasoning_rate": [
+          1.0,
+          1.0
+        ],
+        "trigger_calls": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct": 645,
+      "dataset": "all",
+      "device_ids": [
+        "device-B",
+        "device-C"
+      ],
+      "early_stop_rate": 0.0,
+      "full_reads": 1.0,
+      "generation_tokens": 1022.1614583333334,
+      "input_tokens": 1528.90625,
+      "invalid_rate": 0.0,
+      "method": "forced-terminal-prefill-1024",
+      "n": 768,
+      "p95_pipeline_seconds": 9.806236945139243,
+      "physical_output_tokens": 1026.1614583333333,
+      "pipeline_seconds": 9.462219176847915,
+      "reasoning_rate": 1.0,
+      "trigger_calls": 0.0
+    }
+  ],
+  "timing_device": "device-C",
+  "timing_runs_per_subject": 3,
+  "timing_subjects": 48
+}
