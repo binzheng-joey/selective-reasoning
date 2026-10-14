@@ -1,0 +1,583 @@
+{
+  "companion_archive": "coling2027-data.zip",
+  "cpu_statistical_replication": {
+    "bootstrap_draws": 10000,
+    "command": "python recompute.py --check",
+    "entry_point": "coling2027-paper/reproducibility/recompute.py",
+    "execution_series": 9,
+    "measurement_rows": 29808,
+    "numeric_values_checked": 16888,
+    "seed": 20261010,
+    "verification_scope": "Recompute exported statistics and intervals; model inference and token-trace audits are outside this entry point.",
+    "verified": true
+  },
+  "entries": [
+    {
+      "bytes": 11662,
+      "entry": "coling2027-paper/reproducibility/recompute.py",
+      "evidence_entry_sha256": "d08d369f6bb577453dcab22f8e48e338f49463176743495b93b4807c030eea66",
+      "original_source_sha256": "d08d369f6bb577453dcab22f8e48e338f49463176743495b93b4807c030eea66",
+      "role": "cpu-statistical-replication",
+      "sha256": "d08d369f6bb577453dcab22f8e48e338f49463176743495b93b4807c030eea66",
+      "transformations": [
+        "Already anonymous explicit statistical schema; copied byte-for-byte to preserve its input bindings."
+      ]
+    },
+    {
+      "bytes": 3966,
+      "entry": "coling2027-paper/reproducibility/README.md",
+      "evidence_entry_sha256": "714a1e9caf2233ec9bddc82b2b5ef52b259116132c7cee5b3ad70812a5ed4077",
+      "original_source_sha256": "714a1e9caf2233ec9bddc82b2b5ef52b259116132c7cee5b3ad70812a5ed4077",
+      "role": "cpu-statistical-replication",
+      "sha256": "714a1e9caf2233ec9bddc82b2b5ef52b259116132c7cee5b3ad70812a5ed4077",
+      "transformations": [
+        "Already anonymous explicit statistical schema; copied byte-for-byte to preserve its input bindings."
+      ]
+    },
+    {
+      "bytes": 15,
+      "entry": "coling2027-paper/reproducibility/requirements.txt",
+      "evidence_entry_sha256": "c6840b16ab8f6f20dea2b473b25f18bf5ab7a25902d0823f0026d8a6b5475d94",
+      "original_source_sha256": "c6840b16ab8f6f20dea2b473b25f18bf5ab7a25902d0823f0026d8a6b5475d94",
+      "role": "cpu-statistical-replication",
+      "sha256": "c6840b16ab8f6f20dea2b473b25f18bf5ab7a25902d0823f0026d8a6b5475d94",
+      "transformations": [
+        "Already anonymous explicit statistical schema; copied byte-for-byte to preserve its input bindings."
+      ]
+    },
+    {
+      "bytes": 17838,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/source/worker.py",
+      "evidence_entry_sha256": "cc44c68c5af95958dbb0fedd6ccd2789e7a390466d2dc6304c2a391863212cd0",
+      "original_source_sha256": "cc44c68c5af95958dbb0fedd6ccd2789e7a390466d2dc6304c2a391863212cd0",
+      "role": "source",
+      "sha256": "cc44c68c5af95958dbb0fedd6ccd2789e7a390466d2dc6304c2a391863212cd0",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 3707,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/source/heads.py",
+      "evidence_entry_sha256": "afd6b8bd5fac88f337586893430f4273f6ec511351f6ae6be11f6f9c736d4bc9",
+      "original_source_sha256": "afd6b8bd5fac88f337586893430f4273f6ec511351f6ae6be11f6f9c736d4bc9",
+      "role": "source",
+      "sha256": "afd6b8bd5fac88f337586893430f4273f6ec511351f6ae6be11f6f9c736d4bc9",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 1724,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/source/common.py",
+      "evidence_entry_sha256": "a84d5feb66f20c1cf93cca0980fd2dcc4f96f702c8c4c8ef55d617a6f6fcd779",
+      "original_source_sha256": "36fc60053b104f53d43cd273597aa0e3bab41cd690ccae4e527acf0f8f30fe41",
+      "role": "source",
+      "sha256": "a84d5feb66f20c1cf93cca0980fd2dcc4f96f702c8c4c8ef55d617a6f6fcd779",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 5254,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/source/prepare.py",
+      "evidence_entry_sha256": "d10e9129e53c40413293a9d30732ff24af9008dab614674e601fc0adc62afc0a",
+      "original_source_sha256": "d10e9129e53c40413293a9d30732ff24af9008dab614674e601fc0adc62afc0a",
+      "role": "source",
+      "sha256": "d10e9129e53c40413293a9d30732ff24af9008dab614674e601fc0adc62afc0a",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 10627,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/source/prepare_stop_protocol.py",
+      "evidence_entry_sha256": "a554ed3656aea8d304d6fc7c321424ed4d1390485467e63b60c866898ec8664b",
+      "original_source_sha256": "a554ed3656aea8d304d6fc7c321424ed4d1390485467e63b60c866898ec8664b",
+      "role": "source",
+      "sha256": "a554ed3656aea8d304d6fc7c321424ed4d1390485467e63b60c866898ec8664b",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 16255,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/source/train_stop_grid.py",
+      "evidence_entry_sha256": "114859ddbad9e02a2ca6d75550e3cea1f737fd979859e3fb5b8c09b03d65f57f",
+      "original_source_sha256": "114859ddbad9e02a2ca6d75550e3cea1f737fd979859e3fb5b8c09b03d65f57f",
+      "role": "source",
+      "sha256": "114859ddbad9e02a2ca6d75550e3cea1f737fd979859e3fb5b8c09b03d65f57f",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 22071,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_formal_run.py",
+      "evidence_entry_sha256": "8dad2b3333fc06e038e474fc28e970b509eb0b7e41dab1682b08360d42b44a7e",
+      "original_source_sha256": "8dad2b3333fc06e038e474fc28e970b509eb0b7e41dab1682b08360d42b44a7e",
+      "role": "source",
+      "sha256": "8dad2b3333fc06e038e474fc28e970b509eb0b7e41dab1682b08360d42b44a7e",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 13428,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_integrated_online.py",
+      "evidence_entry_sha256": "e62b8fa75a5542289d20bcd6b4b5b5461d9fed564f681f1a608b73699abf7a81",
+      "original_source_sha256": "e62b8fa75a5542289d20bcd6b4b5b5461d9fed564f681f1a608b73699abf7a81",
+      "role": "source",
+      "sha256": "e62b8fa75a5542289d20bcd6b4b5b5461d9fed564f681f1a608b73699abf7a81",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 17551,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/sentence_online.py",
+      "evidence_entry_sha256": "4f6c4d62509ff8e3a3bd2f65cb94521512e733aa8698594cffb62b35f167194a",
+      "original_source_sha256": "4f6c4d62509ff8e3a3bd2f65cb94521512e733aa8698594cffb62b35f167194a",
+      "role": "source",
+      "sha256": "4f6c4d62509ff8e3a3bd2f65cb94521512e733aa8698594cffb62b35f167194a",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 2023,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_variable_choice.py",
+      "evidence_entry_sha256": "53b1b9b0260896685e30f74a3304580c0a67cd27f69f3d153cf524f644747b29",
+      "original_source_sha256": "53b1b9b0260896685e30f74a3304580c0a67cd27f69f3d153cf524f644747b29",
+      "role": "source",
+      "sha256": "53b1b9b0260896685e30f74a3304580c0a67cd27f69f3d153cf524f644747b29",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 4122,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_control.py",
+      "evidence_entry_sha256": "971d3f2788566085ede230359c724f06e6ba52e4986d6c9cde595ea7b1e9bac3",
+      "original_source_sha256": "971d3f2788566085ede230359c724f06e6ba52e4986d6c9cde595ea7b1e9bac3",
+      "role": "source",
+      "sha256": "971d3f2788566085ede230359c724f06e6ba52e4986d6c9cde595ea7b1e9bac3",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 12406,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_prior_baselines.py",
+      "evidence_entry_sha256": "a9cc5910627244728bb0979d6778a69e1f4aaf18d34185ccd12d4f2caa2dcac1",
+      "original_source_sha256": "a9cc5910627244728bb0979d6778a69e1f4aaf18d34185ccd12d4f2caa2dcac1",
+      "role": "source",
+      "sha256": "a9cc5910627244728bb0979d6778a69e1f4aaf18d34185ccd12d4f2caa2dcac1",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 1077,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_repaired_final.py",
+      "evidence_entry_sha256": "f4199eb6843ec7dfac1f742dd2c5c727aa50b6962bea146521a52b72aa8639a2",
+      "original_source_sha256": "f4199eb6843ec7dfac1f742dd2c5c727aa50b6962bea146521a52b72aa8639a2",
+      "role": "source",
+      "sha256": "f4199eb6843ec7dfac1f742dd2c5c727aa50b6962bea146521a52b72aa8639a2",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 3953,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_native_final.py",
+      "evidence_entry_sha256": "7a92d37cdf7eda9de1021e6e0563cc3ed5603d6df6881479f742a4f5831077d3",
+      "original_source_sha256": "7a92d37cdf7eda9de1021e6e0563cc3ed5603d6df6881479f742a4f5831077d3",
+      "role": "source",
+      "sha256": "7a92d37cdf7eda9de1021e6e0563cc3ed5603d6df6881479f742a4f5831077d3",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 19565,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_budget_baselines.py",
+      "evidence_entry_sha256": "a09d7adf543c654cef46d4d433249064edaa831da32d438cf12de5545c575c18",
+      "original_source_sha256": "a09d7adf543c654cef46d4d433249064edaa831da32d438cf12de5545c575c18",
+      "role": "source",
+      "sha256": "a09d7adf543c654cef46d4d433249064edaa831da32d438cf12de5545c575c18",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 19163,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_gpu_queue.py",
+      "evidence_entry_sha256": "976ff7fd8d230cd5012110137c8f8f289086f6f88ce8b19f06f0fb5f9054e785",
+      "original_source_sha256": "1944f661709be00bba6087f6370d0bdf85ef80c8736d463024d730f791b15cd5",
+      "role": "source",
+      "sha256": "976ff7fd8d230cd5012110137c8f8f289086f6f88ce8b19f06f0fb5f9054e785",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 4976,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_deer_counting_repair.py",
+      "evidence_entry_sha256": "49d05b44b0435515935837f4dcc9f4c2326fa57560743cca3496ef3d0748aca5",
+      "original_source_sha256": "49d05b44b0435515935837f4dcc9f4c2326fa57560743cca3496ef3d0748aca5",
+      "role": "source",
+      "sha256": "49d05b44b0435515935837f4dcc9f4c2326fa57560743cca3496ef3d0748aca5",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 5153,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_task_agnostic_trigger.py",
+      "evidence_entry_sha256": "1f1d3d867905ad3ce4590240944fef222e5028020c12d75853c4565b0b0b9170",
+      "original_source_sha256": "1f1d3d867905ad3ce4590240944fef222e5028020c12d75853c4565b0b0b9170",
+      "role": "source",
+      "sha256": "1f1d3d867905ad3ce4590240944fef222e5028020c12d75853c4565b0b0b9170",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 13445,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/followup.py",
+      "evidence_entry_sha256": "e6d4f3293378ea6a2d039599cbc8b917749a32874d2728b68ed62af8daf72344",
+      "original_source_sha256": "e6d4f3293378ea6a2d039599cbc8b917749a32874d2728b68ed62af8daf72344",
+      "role": "source",
+      "sha256": "e6d4f3293378ea6a2d039599cbc8b917749a32874d2728b68ed62af8daf72344",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 26946,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/sentence_policies.py",
+      "evidence_entry_sha256": "bfbf27abf8e1694dfd7a519299170c58057f3ff3e65c294a4166b6c2477d0544",
+      "original_source_sha256": "bfbf27abf8e1694dfd7a519299170c58057f3ff3e65c294a4166b6c2477d0544",
+      "role": "source",
+      "sha256": "bfbf27abf8e1694dfd7a519299170c58057f3ff3e65c294a4166b6c2477d0544",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 8335,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/gate_unified_endpoint.py",
+      "evidence_entry_sha256": "a61531eaa5e7db460e13cd9b364aeebd0f3757d5933a52632b221a9a66b7b2a7",
+      "original_source_sha256": "a61531eaa5e7db460e13cd9b364aeebd0f3757d5933a52632b221a9a66b7b2a7",
+      "role": "source",
+      "sha256": "a61531eaa5e7db460e13cd9b364aeebd0f3757d5933a52632b221a9a66b7b2a7",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 25146,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/run.py",
+      "evidence_entry_sha256": "c797f3a520a4817ec7361bf5a7d89c45b6cbe257b9a7df1e7f76d7e2716d30f4",
+      "original_source_sha256": "c797f3a520a4817ec7361bf5a7d89c45b6cbe257b9a7df1e7f76d7e2716d30f4",
+      "role": "source",
+      "sha256": "c797f3a520a4817ec7361bf5a7d89c45b6cbe257b9a7df1e7f76d7e2716d30f4",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 11352,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_main_table_prepare.py",
+      "evidence_entry_sha256": "c381ad1053d1780f3db69b2b8d064e9d2372d6f9cdd61beee041ab9588c13eab",
+      "original_source_sha256": "c381ad1053d1780f3db69b2b8d064e9d2372d6f9cdd61beee041ab9588c13eab",
+      "role": "source",
+      "sha256": "c381ad1053d1780f3db69b2b8d064e9d2372d6f9cdd61beee041ab9588c13eab",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 9251,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_data_audit.py",
+      "evidence_entry_sha256": "2b9037cb3a14b48d7c2171e1979de3f954f9b481e9ace09e3962ba668d9854f2",
+      "original_source_sha256": "2b9037cb3a14b48d7c2171e1979de3f954f9b481e9ace09e3962ba668d9854f2",
+      "role": "source",
+      "sha256": "2b9037cb3a14b48d7c2171e1979de3f954f9b481e9ace09e3962ba668d9854f2",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 33263,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_essential_analysis.py",
+      "evidence_entry_sha256": "b6c8eb7462d86277100dfab7bd0583f24fcbf9b07f4eb2cc64ac96ad37a33d1a",
+      "original_source_sha256": "b6c8eb7462d86277100dfab7bd0583f24fcbf9b07f4eb2cc64ac96ad37a33d1a",
+      "role": "source",
+      "sha256": "b6c8eb7462d86277100dfab7bd0583f24fcbf9b07f4eb2cc64ac96ad37a33d1a",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 19002,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/source/arr_formal_analysis.py",
+      "evidence_entry_sha256": "201f7dceff09ee8d426e681daa99c429c71f47dc6f3c03f85205dfc8249a8cea",
+      "original_source_sha256": "201f7dceff09ee8d426e681daa99c429c71f47dc6f3c03f85205dfc8249a8cea",
+      "role": "source",
+      "sha256": "201f7dceff09ee8d426e681daa99c429c71f47dc6f3c03f85205dfc8249a8cea",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 15665,
+      "entry": "output/kev-adaptive-reasoning/official-gate-data-v1/source/formal_official_splits_v1.py",
+      "evidence_entry_sha256": "a9f78fcd9520f62b0609677885a0ecab8515afba8279e4e48a3cdfb32b515c9d",
+      "original_source_sha256": "a9f78fcd9520f62b0609677885a0ecab8515afba8279e4e48a3cdfb32b515c9d",
+      "role": "source",
+      "sha256": "a9f78fcd9520f62b0609677885a0ecab8515afba8279e4e48a3cdfb32b515c9d",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 29371,
+      "entry": "output/kev-adaptive-reasoning/gate-data-partitions-v1/source/gate_data_v1.py",
+      "evidence_entry_sha256": "ebda5a0bed81bbd6f7823784062da7590000ee8f4370e2a61943f9555ce27a88",
+      "original_source_sha256": "f521551f124e477a29bf096e5f89f8aa6bd36f34df87854f752252ea5ee3f183",
+      "role": "source",
+      "sha256": "ebda5a0bed81bbd6f7823784062da7590000ee8f4370e2a61943f9555ce27a88",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 6479,
+      "entry": "output/kev-adaptive-reasoning/gate-utility-expanded1024-riskcost-20261005-v1/source/six_scheme_contract_cpu.py",
+      "evidence_entry_sha256": "f80cf795e68c42f9bbbc5ca7b5df25f919f753a8f7592e108d9042063f4fcb54",
+      "original_source_sha256": "aa23e0297653528951c09224f6a72bd1152e0f12d5cd1b90f324a1903a5513b3",
+      "role": "source",
+      "sha256": "f80cf795e68c42f9bbbc5ca7b5df25f919f753a8f7592e108d9042063f4fcb54",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 1534,
+      "entry": "output/kev-adaptive-reasoning/gate-utility-expanded1024-riskcost-20261005-v1/source/selected_train_reader.py",
+      "evidence_entry_sha256": "66b9276d233e93c2baf324648ef5fd82280c1fa9baea4121152927539fcbbf48",
+      "original_source_sha256": "38c8d474b3e8b54ab6f15c7d9a343f2e7e5878d12c7146104eb3bf9efd5dc896",
+      "role": "source",
+      "sha256": "66b9276d233e93c2baf324648ef5fd82280c1fa9baea4121152927539fcbbf48",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 3253,
+      "entry": "output/kev-adaptive-reasoning/sentence-async-readers-v1/sparse-checks/source/sentence_v2.py",
+      "evidence_entry_sha256": "c5235151a1a92bcc0b4b8109a21f199718ca8cec407afb332d4e9336cf5ca579",
+      "original_source_sha256": "c5235151a1a92bcc0b4b8109a21f199718ca8cec407afb332d4e9336cf5ca579",
+      "role": "source",
+      "sha256": "c5235151a1a92bcc0b4b8109a21f199718ca8cec407afb332d4e9336cf5ca579",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 14044,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/source/run.py",
+      "evidence_entry_sha256": "d0f75a0f00478399d4138de85fc78b46c4f6448ee6981bb7ddfd6c8fd9ebb66f",
+      "original_source_sha256": "71242d9a889a5f86f6773abd0b8d1fbc4d5bcaf96f19df347f09a9f2a94e603c",
+      "role": "source",
+      "sha256": "d0f75a0f00478399d4138de85fc78b46c4f6448ee6981bb7ddfd6c8fd9ebb66f",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 7209,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/source/manage.py",
+      "evidence_entry_sha256": "d9b8437e14c9b31ba2f5a3818ca7e9234b9a85adbd2cc2f52089f62e81061330",
+      "original_source_sha256": "d9b8437e14c9b31ba2f5a3818ca7e9234b9a85adbd2cc2f52089f62e81061330",
+      "role": "source",
+      "sha256": "d9b8437e14c9b31ba2f5a3818ca7e9234b9a85adbd2cc2f52089f62e81061330",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 4345,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/source/serial_adapter.py",
+      "evidence_entry_sha256": "4492d09bfdbe19e30d8c004cdb4e7bd58c15093f93af2f5e32e45b33e76673ae",
+      "original_source_sha256": "4492d09bfdbe19e30d8c004cdb4e7bd58c15093f93af2f5e32e45b33e76673ae",
+      "role": "source",
+      "sha256": "4492d09bfdbe19e30d8c004cdb4e7bd58c15093f93af2f5e32e45b33e76673ae",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 5682,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/source/analyze.py",
+      "evidence_entry_sha256": "e47ddc8f302b12be80b522282f5fa08a21d3cf2b305c0e2743e2b16b9cdeb989",
+      "original_source_sha256": "e47ddc8f302b12be80b522282f5fa08a21d3cf2b305c0e2743e2b16b9cdeb989",
+      "role": "source",
+      "sha256": "e47ddc8f302b12be80b522282f5fa08a21d3cf2b305c0e2743e2b16b9cdeb989",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 24832,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/diagnostic.py",
+      "evidence_entry_sha256": "dbdc6528d43648c3903eef3d64e8564758ec2463f9d91e370e6d03ca15b8df33",
+      "original_source_sha256": "dbdc6528d43648c3903eef3d64e8564758ec2463f9d91e370e6d03ca15b8df33",
+      "role": "source",
+      "sha256": "dbdc6528d43648c3903eef3d64e8564758ec2463f9d91e370e6d03ca15b8df33",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 9962,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/supplementary.py",
+      "evidence_entry_sha256": "8322710418d0c1530ba73fd30ab1d7570d37f35c9043fd587fc1438d3332edc3",
+      "original_source_sha256": "8322710418d0c1530ba73fd30ab1d7570d37f35c9043fd587fc1438d3332edc3",
+      "role": "source",
+      "sha256": "8322710418d0c1530ba73fd30ab1d7570d37f35c9043fd587fc1438d3332edc3",
+      "transformations": [
+        "Replace personal local roots with /project or /external-local-path; pseudonymize device UUIDs."
+      ]
+    },
+    {
+      "bytes": 42594,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/training/answer_position_linear-s29.pt",
+      "evidence_entry_sha256": "263c993dd34fe5a699b08d490276a0eb76f6a80e20525d97fd3f4119db53f305",
+      "original_source_sha256": "ef302edbbcd50c35d78a16a6d936b7530f30cc46353f1c1306623537c6e8f8ef",
+      "role": "reader-weights",
+      "sha256": "263c993dd34fe5a699b08d490276a0eb76f6a80e20525d97fd3f4119db53f305",
+      "transformations": [
+        "CPU weights-only export; keep kind/seed/lr/epoch/parameter count and state_dict.linear.weight.",
+        "Remove development probabilities, per-question IDs and aggregate checkpoint score fields; weights are tensor-equal to source."
+      ]
+    },
+    {
+      "bytes": 1900,
+      "entry": "README-software.md",
+      "role": "documentation",
+      "sha256": "90a59bb2c0d76d1c2e305af6313dcd875e264410e8a08401c1ef72606614f803"
+    }
+  ],
+  "excluded_from_upload": [
+    {
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/result-synthesis/source/synthesize.py",
+      "reason": "Package documentation or historical report rendering."
+    },
+    {
+      "entry": "coling2027-paper/scripts/render_execution_index.py",
+      "reason": "Package documentation or historical report rendering."
+    },
+    {
+      "entry": "coling2027-paper/scripts/render_position_diagnostic.py",
+      "reason": "Package documentation or historical report rendering."
+    },
+    {
+      "entry": "coling2027-paper/sections/03-method.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/04-experiments.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/09-appendix.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/12-confirmation-details.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/13-reproducibility.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/14-supplementary-comparisons.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/15-position-diagnostic.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/main-results.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/ablations.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/control-work.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/threshold-operating-points.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/paired-comparisons.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/full-cohort-costs.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/routing.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/same-device-timing.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/stopping.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/supplement-calibrated.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/supplement-factorial.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/supplement-execution.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/trigger-revisions.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/position-diagnostic.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/execution-index.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "README.md",
+      "reason": "Package documentation or historical report rendering."
+    }
+  ],
+  "package": "software",
+  "schema": 1,
+  "source_evidence_sha256": "1ed319f905c8914c79b6a26adc626c84e1dd5a81d6fdfdc13ed43e13aabcb19a"
+}

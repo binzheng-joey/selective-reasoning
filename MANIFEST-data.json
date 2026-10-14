@@ -1,0 +1,943 @@
+{
+  "companion_archive": "coling2027-software.zip",
+  "cpu_statistical_replication": {
+    "bootstrap_draws": 10000,
+    "command": "python recompute.py --check",
+    "entry_point": "coling2027-paper/reproducibility/recompute.py",
+    "execution_series": 9,
+    "measurement_rows": 29808,
+    "numeric_values_checked": 16888,
+    "seed": 20261010,
+    "verification_scope": "Recompute exported statistics and intervals; model inference and token-trace audits are outside this entry point.",
+    "verified": true
+  },
+  "entries": [
+    {
+      "bytes": 3036802,
+      "entry": "coling2027-paper/reproducibility/data/records.csv",
+      "evidence_entry_sha256": "02ecdbeaeee1cdad125facc08fab0257f3cf9be7a6d4d75aa336e108528a719a",
+      "original_source_sha256": "02ecdbeaeee1cdad125facc08fab0257f3cf9be7a6d4d75aa336e108528a719a",
+      "role": "cpu-statistical-replication",
+      "sha256": "02ecdbeaeee1cdad125facc08fab0257f3cf9be7a6d4d75aa336e108528a719a",
+      "transformations": [
+        "Already anonymous explicit statistical schema; copied byte-for-byte to preserve its input bindings."
+      ]
+    },
+    {
+      "bytes": 494117,
+      "entry": "coling2027-paper/reproducibility/data/metadata.json",
+      "evidence_entry_sha256": "07c6305ff520b4a1df24c2c134864b922054987071130e929fa3ed02961d1574",
+      "original_source_sha256": "07c6305ff520b4a1df24c2c134864b922054987071130e929fa3ed02961d1574",
+      "role": "cpu-statistical-replication",
+      "sha256": "07c6305ff520b4a1df24c2c134864b922054987071130e929fa3ed02961d1574",
+      "transformations": [
+        "Already anonymous explicit statistical schema; copied byte-for-byte to preserve its input bindings."
+      ]
+    },
+    {
+      "bytes": 949486,
+      "entry": "coling2027-paper/reproducibility/data/expected.json",
+      "evidence_entry_sha256": "24e77faf7a854c893d836a250fdd40247df66cf96908bf2bf30dc072d0ceaa0f",
+      "original_source_sha256": "24e77faf7a854c893d836a250fdd40247df66cf96908bf2bf30dc072d0ceaa0f",
+      "role": "cpu-statistical-replication",
+      "sha256": "24e77faf7a854c893d836a250fdd40247df66cf96908bf2bf30dc072d0ceaa0f",
+      "transformations": [
+        "Already anonymous explicit statistical schema; copied byte-for-byte to preserve its input bindings."
+      ]
+    },
+    {
+      "bytes": 161255,
+      "entry": "coling2027-paper/reproducibility/data/manifest.json",
+      "evidence_entry_sha256": "2d43ac9013f002bdfda19369b1fac1e894deffcd5ba4192182cdfee833681a69",
+      "original_source_sha256": "2d43ac9013f002bdfda19369b1fac1e894deffcd5ba4192182cdfee833681a69",
+      "role": "cpu-statistical-replication",
+      "sha256": "2d43ac9013f002bdfda19369b1fac1e894deffcd5ba4192182cdfee833681a69",
+      "transformations": [
+        "Already anonymous explicit statistical schema; copied byte-for-byte to preserve its input bindings."
+      ]
+    },
+    {
+      "bytes": 4401,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/protocol.json",
+      "evidence_entry_sha256": "685adba84c3f855ce2808488038176dc2e0fe6ed043007603d7f964072544c4a",
+      "original_source_sha256": "5ae46385935729c523a6b3ef9d6dc2a7663f9e36f5b35ebb697bce25532b7140",
+      "role": "protocol-or-aggregate",
+      "sha256": "685adba84c3f855ce2808488038176dc2e0fe6ed043007603d7f964072544c4a",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: next_stage, protected"
+      ]
+    },
+    {
+      "bytes": 2367,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/training/selected.json",
+      "evidence_entry_sha256": "81f57a722dd5093c3a919227c255ca8b0e15e3fa9fab7ed71b0da7dfa776f588",
+      "original_source_sha256": "5bffd909dc09a5310e79de496041da0c1da40bebbdd8d15f9725f3405eda85da",
+      "role": "protocol-or-aggregate",
+      "sha256": "81f57a722dd5093c3a919227c255ca8b0e15e3fa9fab7ed71b0da7dfa776f588",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 24304,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/gate-unified-endpoint/split.json",
+      "evidence_entry_sha256": "2dd97b75790cec1ff6cdc5190de0f41b975257689576ab1152203f339025a39b",
+      "original_source_sha256": "fe266017601d79ef9192d28774d0d901805bf0c9a9733573d3c579b60ebd64e0",
+      "role": "protocol-or-aggregate",
+      "sha256": "2dd97b75790cec1ff6cdc5190de0f41b975257689576ab1152203f339025a39b",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 167835,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/integrated/gates.json",
+      "evidence_entry_sha256": "ab087fca7cecf7b08df8659874ecf001d4b385963566d954fd8bc0ef6eca0ff7",
+      "original_source_sha256": "9b527c0c81fc7cb051d6bbddb8d5a1d723fbeef41ee0cb27654a9474a6f8a3b9",
+      "role": "protocol-or-aggregate",
+      "sha256": "ab087fca7cecf7b08df8659874ecf001d4b385963566d954fd8bc0ef6eca0ff7",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 57006,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/sentence-online/trigger.json",
+      "evidence_entry_sha256": "383c88f30e96d850745040a3f6d384cb84213b3cc8c233a0c24aeecb1aefacc0",
+      "original_source_sha256": "c28bd5b450f97454c4cfe391e62241f688befce0e485239d52075fc4318abd0f",
+      "role": "protocol-or-aggregate",
+      "sha256": "383c88f30e96d850745040a3f6d384cb84213b3cc8c233a0c24aeecb1aefacc0",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 57122,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/task-agnostic-trigger/trigger.json",
+      "evidence_entry_sha256": "8ff9bfbea5dfd34b2519a2c23b640efa23c66221edba215807d58d2245a16524",
+      "original_source_sha256": "1309d6789373f8569e9415375062353347cede48bc4f8d196c9a696f91168a8c",
+      "role": "protocol-or-aggregate",
+      "sha256": "8ff9bfbea5dfd34b2519a2c23b640efa23c66221edba215807d58d2245a16524",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 1304,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/task-agnostic-trigger/protocol.json",
+      "evidence_entry_sha256": "e99f8af9af2a81d66ba564c7ddde53fc765d5278a79f92f122b1236192ab8531",
+      "original_source_sha256": "c93e96933e9856f368bfb7d8e6bd2f69417dcfc5105b140aec7600451a46bba6",
+      "role": "protocol-or-aggregate",
+      "sha256": "e99f8af9af2a81d66ba564c7ddde53fc765d5278a79f92f122b1236192ab8531",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 3116,
+      "entry": "output/kev-adaptive-reasoning/official-gate-data-v1/download-manifest.json",
+      "evidence_entry_sha256": "5307ff5d3cc134bfb4b82e77abd931081443fb055de9384f9728d28d63359073",
+      "original_source_sha256": "abf7e86560e6a54288f7fdb31db4e10b7e3f1c8a9f122459b7570e7ce9aa46f5",
+      "role": "protocol-or-aggregate",
+      "sha256": "5307ff5d3cc134bfb4b82e77abd931081443fb055de9384f9728d28d63359073",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 1093,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/arc/raw/source.json",
+      "evidence_entry_sha256": "e00b2761b795f47b2ae986ef1a7d0a702cb80e2e7a9c4ee4d852be19ebb7e64d",
+      "original_source_sha256": "122fc9807bef0d56580aaa1a0e0d48037bed0fada037a92155ff7327a048d21e",
+      "role": "protocol-or-aggregate",
+      "sha256": "e00b2761b795f47b2ae986ef1a7d0a702cb80e2e7a9c4ee4d852be19ebb7e64d",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 1334,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/arc/development-exclusions.json",
+      "evidence_entry_sha256": "964449b57ef7907e9341e05b38fe1a58fc47e375d05c4feebc366c708dc600da",
+      "original_source_sha256": "acefb114426800578404722db2f1c82bc76fbb2dabe2b78a01833650e1725a65",
+      "role": "protocol-or-aggregate",
+      "sha256": "964449b57ef7907e9341e05b38fe1a58fc47e375d05c4feebc366c708dc600da",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 14547,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/formal-confirmation/protocol.json",
+      "evidence_entry_sha256": "11789661af5fc5897941e7b73f82e6b08de081765ba4ad1ba9bb5383c941d1d7",
+      "original_source_sha256": "a753d886580f30d4dd5d653bb828bdebdeba256fd775623fbe33cfe790b1900b",
+      "role": "protocol-or-aggregate",
+      "sha256": "11789661af5fc5897941e7b73f82e6b08de081765ba4ad1ba9bb5383c941d1d7",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 1305653,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/formal-confirmation/jobs.json",
+      "evidence_entry_sha256": "fb839776ec199b8e38ee6d052ee02c6127ae5ab42ada2de8fa3c9c165be6337d",
+      "original_source_sha256": "eb6d2c20b099ecbcc8adb05885caae581e258827f3a1352d2574c071c039ac4f",
+      "role": "protocol-or-aggregate",
+      "sha256": "fb839776ec199b8e38ee6d052ee02c6127ae5ab42ada2de8fa3c9c165be6337d",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 7577,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/collection-protocol.json",
+      "evidence_entry_sha256": "18268c30d83d111a55f33b2b8a581e63a8e549d33bfca0f294e94c3b563adb30",
+      "original_source_sha256": "ba8923d6148dc45f50daa72932d98361c65c603d6a1a0dabd3af6484d4a6c964",
+      "role": "protocol-or-aggregate",
+      "sha256": "e4651fc45a5a74505781e45052930443aa4a8bf5f829e04a5a88c0ffe0ca1092",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none",
+        "Omit the non-experimental authorization narrative field."
+      ]
+    },
+    {
+      "bytes": 579338,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/collection-jobs.json",
+      "evidence_entry_sha256": "8ad482177e85696fcdcd3d5781656e0199da0780412da4db5ece4cd15064b929",
+      "original_source_sha256": "ccfd5030643fcfb2e5b2356074e1ebf9f795fb1a31226f8d1452c55f381ff699",
+      "role": "protocol-or-aggregate",
+      "sha256": "8ad482177e85696fcdcd3d5781656e0199da0780412da4db5ece4cd15064b929",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 4708,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/protocol.json",
+      "evidence_entry_sha256": "c229c9bae41be541523a0366b0603e0617c85d5bb19af139c722adc8ef5dc0a5",
+      "original_source_sha256": "214b218657379f0220eb2a6244997e2a0c6d26a5887fe369e091fd75769785bc",
+      "role": "protocol-or-aggregate",
+      "sha256": "c229c9bae41be541523a0366b0603e0617c85d5bb19af139c722adc8ef5dc0a5",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 9314,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/budget-baselines/protocol.json",
+      "evidence_entry_sha256": "569bcdec1d6db76bf08340722b19a61b01bdb9bbe654a8a8b268f860b5ea8561",
+      "original_source_sha256": "525aec580315c3c990be5aa217c3687be43e98c80ba6fdfa73d45a6d51cb8a81",
+      "role": "protocol-or-aggregate",
+      "sha256": "569bcdec1d6db76bf08340722b19a61b01bdb9bbe654a8a8b268f860b5ea8561",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 8819,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/development/protocol.json",
+      "evidence_entry_sha256": "4a0d883d2112b523b927804431dbb3f4cdd3ca0ddbd6ed3964fffa6c816c0157",
+      "original_source_sha256": "983c84ed95ed5808aaf02b0a83a5cccc75966a48f5b8c6cd01745a96fc83a960",
+      "role": "protocol-or-aggregate",
+      "sha256": "4a0d883d2112b523b927804431dbb3f4cdd3ca0ddbd6ed3964fffa6c816c0157",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 5295,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/development/selection.json",
+      "evidence_entry_sha256": "9e4bd24056fec112742e27d52ac6c737cf8077dd5a294cd65a45da0e1503ebc6",
+      "original_source_sha256": "d0ba530824d501bf6d670f0c455fdee619d997370f58cba7795dfdcc747d53cb",
+      "role": "protocol-or-aggregate",
+      "sha256": "9e4bd24056fec112742e27d52ac6c737cf8077dd5a294cd65a45da0e1503ebc6",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 22633,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/calibrated/protocol.json",
+      "evidence_entry_sha256": "6236a935588b45b18a842825303e42dd89f32d8a795f2175c2c6380aa2fb6aff",
+      "original_source_sha256": "9c7413f1ad5e8aa2d153927dabe57ee437301fdc3ca096b4816bde742b812c70",
+      "role": "protocol-or-aggregate",
+      "sha256": "6236a935588b45b18a842825303e42dd89f32d8a795f2175c2c6380aa2fb6aff",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 21392,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/controls/protocol.json",
+      "evidence_entry_sha256": "99ff34c400d6d3d2252d2384a8984846520bcb138e386beb5ca002424b651d0e",
+      "original_source_sha256": "dd497c102c76795c071948559aa4a5c163381f4faf1c64afab9897b995dbf20d",
+      "role": "protocol-or-aggregate",
+      "sha256": "99ff34c400d6d3d2252d2384a8984846520bcb138e386beb5ca002424b651d0e",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 6757,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/serial/protocol.json",
+      "evidence_entry_sha256": "7120d5052b01fed8b91a39e2a1d51ca99545b438d075285e0a93831ff05347a8",
+      "original_source_sha256": "86a19430722b58b687616ad02637a6538320189133aaf488621fcdccb3b2153f",
+      "role": "protocol-or-aggregate",
+      "sha256": "7120d5052b01fed8b91a39e2a1d51ca99545b438d075285e0a93831ff05347a8",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 110400,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/result-synthesis/synthesis.json",
+      "evidence_entry_sha256": "ad7ecd19698fb2ad72359d555faa2540957a89f4796be4f826acfd3b694858ad",
+      "original_source_sha256": "acbd23145348bf439358b2d28bcb7e3e5c076396d3ab01c98928109653e38cb2",
+      "role": "protocol-or-aggregate",
+      "sha256": "ab842e774b0066aadc4582fe4080d8cb3b85bc973aa3a1be75d2fe5bfacfbb83",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: proposed_confirmation, sources.output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/fresh-reservation/reservation.json",
+        "Describe the supplied result synthesis without referring to an excluded planning matrix."
+      ]
+    },
+    {
+      "bytes": 161235,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/main13/analysis.json",
+      "evidence_entry_sha256": "f7d31426341c1ac09f340b385820737a31ef62dc4e7c5cdd1e70c7fd5522cc23",
+      "original_source_sha256": "86f49251a80bc5654d8c9d50222d9ef5131f3750bcb5d473dcab00ff5d68255d",
+      "role": "protocol-or-aggregate",
+      "sha256": "f7d31426341c1ac09f340b385820737a31ef62dc4e7c5cdd1e70c7fd5522cc23",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 75622,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/six-policy/analysis.json",
+      "evidence_entry_sha256": "389ec43a33ab58d1c6c6c25532d722f46c60dd9d44bf350914cf828f4cbe5f17",
+      "original_source_sha256": "21faa30f23f9ce4adfc9d94575355574fcd546e62b577ee06e3ea4e810693ee8",
+      "role": "protocol-or-aggregate",
+      "sha256": "389ec43a33ab58d1c6c6c25532d722f46c60dd9d44bf350914cf828f4cbe5f17",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 158574,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/same-device48/analysis.json",
+      "evidence_entry_sha256": "27d8fdfe90238dbd32e76877f18cfbbc7bb134705086e4f98901a6ffcb56522d",
+      "original_source_sha256": "4e1f47710f8424b735338962d675fd27cff904c44c964d48f15f49e740d84c34",
+      "role": "protocol-or-aggregate",
+      "sha256": "27d8fdfe90238dbd32e76877f18cfbbc7bb134705086e4f98901a6ffcb56522d",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 8977,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/repeated-timing48.json",
+      "evidence_entry_sha256": "c7efbe31774c73fb5290219a7543ed430329219aec42cfc500f0d0a5b2cf3ea3",
+      "original_source_sha256": "de94ccc8716539c659ae9d1aaf771c17cacef2d44e5189f7e56aba23a15aea8e",
+      "role": "protocol-or-aggregate",
+      "sha256": "c7efbe31774c73fb5290219a7543ed430329219aec42cfc500f0d0a5b2cf3ea3",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 15054,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/main-repeated-timing48.json",
+      "evidence_entry_sha256": "38876730909496bb52a7dad765e6b07dbfd71b189a0c72da6718a0b82735c951",
+      "original_source_sha256": "bd8fa0d384664045b99fd3fca8dd79fbf24926c676d1bcf819ce8391d1688ae5",
+      "role": "protocol-or-aggregate",
+      "sha256": "38876730909496bb52a7dad765e6b07dbfd71b189a0c72da6718a0b82735c951",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 6184,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/device-costs.json",
+      "evidence_entry_sha256": "cc226b14032f7cbc06247866ccd1ab2021718db8815b162bbabb838b52d42782",
+      "original_source_sha256": "5f5110ad9c6c4b1bdeb8d0a4c051b70d2666a46d1634cb1f0e7ca4debdaf3f7e",
+      "role": "protocol-or-aggregate",
+      "sha256": "cc226b14032f7cbc06247866ccd1ab2021718db8815b162bbabb838b52d42782",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 22673,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/cost-breakdown.json",
+      "evidence_entry_sha256": "44afbc470591000c95961f81b98eec2bce87cf6bf403c4e214371e04479f0be9",
+      "original_source_sha256": "0d3a23ff3afe6e4c169e42f54a837c183fb46ac77cbe4afb07ef85caff70e10d",
+      "role": "protocol-or-aggregate",
+      "sha256": "44afbc470591000c95961f81b98eec2bce87cf6bf403c4e214371e04479f0be9",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 949,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/baseline-behavior.json",
+      "evidence_entry_sha256": "252fb8138326d548229b51efeb06e244aa462d52f960cefcf9f4018e8cf21b6d",
+      "original_source_sha256": "51d60ec23ec0730f61d0c36dcc279052e1c88f6beaa72de997c1668e09decc8c",
+      "role": "protocol-or-aggregate",
+      "sha256": "252fb8138326d548229b51efeb06e244aa462d52f960cefcf9f4018e8cf21b6d",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 16861,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/routing.json",
+      "evidence_entry_sha256": "533887e67b374771323800cd5d5fa8bb6acd2c55e84544e8178f9620de5c0222",
+      "original_source_sha256": "4b9c1f4108c2d3ead2df4fe6f6182646d3b8dbffba5b075d1ccf7b8df1078b97",
+      "role": "protocol-or-aggregate",
+      "sha256": "533887e67b374771323800cd5d5fa8bb6acd2c55e84544e8178f9620de5c0222",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 30770,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/stopping.json",
+      "evidence_entry_sha256": "0a567a9e5b688afb1b73ceb28fb59ac71a185b4bf95ececc8d5eefe77aec9a34",
+      "original_source_sha256": "cf8e1b0c6f7b96c1dfcabc5f14e46dc240fcffa25ebb859f0c187c2bc68c68bd",
+      "role": "protocol-or-aggregate",
+      "sha256": "0a567a9e5b688afb1b73ceb28fb59ac71a185b4bf95ececc8d5eefe77aec9a34",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 1021,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/repeat-stability.json",
+      "evidence_entry_sha256": "7c23efe2ab9a04e8b025d66d179f309c423d492fec942de932d09a9c20bef40b",
+      "original_source_sha256": "d3465ca64e156cb63f0afbda5dc85ce86bb0f2626b74f7ccc8644ce86772f83f",
+      "role": "protocol-or-aggregate",
+      "sha256": "7c23efe2ab9a04e8b025d66d179f309c423d492fec942de932d09a9c20bef40b",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 2242,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/main-repeat-stability.json",
+      "evidence_entry_sha256": "86f54ac30da83c5ac8d37d322eaae5ba0a531899edb7df3a51dee4a5e3407b84",
+      "original_source_sha256": "48de9ddd1a19ea9bbb2ac6dd28fc1520d1b38173810bac0e5a447226dbad1a56",
+      "role": "protocol-or-aggregate",
+      "sha256": "86f54ac30da83c5ac8d37d322eaae5ba0a531899edb7df3a51dee4a5e3407b84",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 1475,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/main-cross-device-stability.json",
+      "evidence_entry_sha256": "9c913772b53c4d1d2ea6885c5ab3e0f21db781a4b63a685e1a8127a11ba093c9",
+      "original_source_sha256": "eaec0e6ca7ebcbbcc92c4be7e57b5a11d151e4f5c2b10716393e8f63e1f7fc31",
+      "role": "protocol-or-aggregate",
+      "sha256": "9c913772b53c4d1d2ea6885c5ab3e0f21db781a4b63a685e1a8127a11ba093c9",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 189,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/cross-device-reference-stability.json",
+      "evidence_entry_sha256": "b8d432cae0a081388dabf4789cb384eb76acf8edf051fe02e36bda277f17c49c",
+      "original_source_sha256": "75a0084998a40c72800608a87b050d40d3f1590b4ba32e35ce52f99060a2fab4",
+      "role": "protocol-or-aggregate",
+      "sha256": "b8d432cae0a081388dabf4789cb384eb76acf8edf051fe02e36bda277f17c49c",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 457,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/collection-audit.json",
+      "evidence_entry_sha256": "9c9837fe933d73097c2c54a743a0b98120a38aa8c7af6ad97cb714065134a24f",
+      "original_source_sha256": "2d46e4aef814a58d1759406bfc3ef84764388512db7774f4f214916e5600b02f",
+      "role": "protocol-or-aggregate",
+      "sha256": "9c9837fe933d73097c2c54a743a0b98120a38aa8c7af6ad97cb714065134a24f",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 2923,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/paper-essential/analysis/release-role-schema.json",
+      "evidence_entry_sha256": "b40a3856e2e49e7436fa2d3cd843e7764d765f2f1c1cd658be596468c9b28b4d",
+      "original_source_sha256": "07e7b8cfde9602bd5292a3a47f5d3cd71e0ac34a27650964f7e5f74af759144a",
+      "role": "protocol-or-aggregate",
+      "sha256": "d8e2e510e35e15313cd743b8a1bff44fb04b27706af6008cd210272e5dcb76e7",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none",
+        "Omit the non-experimental authorization narrative field."
+      ]
+    },
+    {
+      "bytes": 3448,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/protocol.json",
+      "evidence_entry_sha256": "84caa7fa3154d6c8ed32a0634d1cee0427b395852b270f03f9d1c2881d98dd81",
+      "original_source_sha256": "37bc3dc0ad8c368f191c4884b082603fe162c325e63da5227dbd87e5cdf7ed5b",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "84caa7fa3154d6c8ed32a0634d1cee0427b395852b270f03f9d1c2881d98dd81",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 1358,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/supplementary-protocol.json",
+      "evidence_entry_sha256": "25de25b3ce3fb1d6a6e8337c9464c3ef93d7f59f1e622dc62b94ca32f5546c40",
+      "original_source_sha256": "c1cf060dae054cee2899aaedd0bcbb0bf3d94a7c1ecc26996f7cb835e47a523c",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "25de25b3ce3fb1d6a6e8337c9464c3ef93d7f59f1e622dc62b94ca32f5546c40",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 483,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/completion.json",
+      "evidence_entry_sha256": "39b59b66a474a71948e8c1d57270c59074b473e3cca7ee37b2e287a24da1fac5",
+      "original_source_sha256": "728f6cc6913287d21b00319d90b7a15ae2514ba9d2f8cfeca1304378648c3ba5",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "39b59b66a474a71948e8c1d57270c59074b473e3cca7ee37b2e287a24da1fac5",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 284,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/supplementary-completion.json",
+      "evidence_entry_sha256": "735a568231f0d73a9e2a1eaf8995429d75a42bd5e8a3dd57589335d3bc10f1ce",
+      "original_source_sha256": "44d274f7b5d510c0814a7c3253aa23f2edbfa50813a43ba14acfb6c705042a63",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "735a568231f0d73a9e2a1eaf8995429d75a42bd5e8a3dd57589335d3bc10f1ce",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 606,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/fitted-baselines.json",
+      "evidence_entry_sha256": "fb068834116a3f3ed82573c6bfb2e6f01911919885ee99f8f7bf70ec6d151fbc",
+      "original_source_sha256": "b05b89725eff41c15d45374128bddde04a51e2d5a6b00dea1101e4a30cd84509",
+      "role": "cpu-diagnostic-parameters",
+      "sha256": "fb068834116a3f3ed82573c6bfb2e6f01911919885ee99f8f7bf70ec6d151fbc",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 10834,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/predictive-metrics.json",
+      "evidence_entry_sha256": "2161b32a1c3a05dd960904024e8e7b2048556dc6091741a9acd7f573d1359793",
+      "original_source_sha256": "635bd01ff39b0f688c2e4b301cc2e4fb6d55a163fe72f0cec0722ea0614bb71c",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "2161b32a1c3a05dd960904024e8e7b2048556dc6091741a9acd7f573d1359793",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 10476,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/paired-predictive-ci.json",
+      "evidence_entry_sha256": "95120cc5f537e155cc55321e0c0f141c02413effb717b3753543fd8556f29200",
+      "original_source_sha256": "7f13f4aa7066a792ec69da5d72e0c999d45b20507da23063544a817aa4602b2e",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "95120cc5f537e155cc55321e0c0f141c02413effb717b3753543fd8556f29200",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 5029,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/checkpoint-predictive-metrics.json",
+      "evidence_entry_sha256": "c12c68b2224294728de31c75ceb1383e62a43914def93a7023b22861abdcaa86",
+      "original_source_sha256": "b2fad2d119498736e027ac594df759e9de7ee2354603e1fa6b6d4e2fa9756e90",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "c12c68b2224294728de31c75ceb1383e62a43914def93a7023b22861abdcaa86",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 10473,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/checkpoint-paired-predictive-ci.json",
+      "evidence_entry_sha256": "3f7a37ad68c90ad3a55dc86a9ff0e3f4d9667c926f60e52e7662712374da858d",
+      "original_source_sha256": "81bc5a42493ff098de48160ae24285785df91ab26f0dd766d4e067a2e040396f",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "3f7a37ad68c90ad3a55dc86a9ff0e3f4d9667c926f60e52e7662712374da858d",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 9282,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/within-question-auroc.json",
+      "evidence_entry_sha256": "b760ebd6b1a9273b5f50846abd2d1497aa5725c288b752d040da22ac86da8bbf",
+      "original_source_sha256": "270075d7cdbab5d9649125b576a6d29339a1f1a06400b3cb93c6ebbb3368c58a",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "b760ebd6b1a9273b5f50846abd2d1497aa5725c288b752d040da22ac86da8bbf",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 7353,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/within-question-paired-ci.json",
+      "evidence_entry_sha256": "527858532334a8122d863e6d8bee2101a031ecf1b04a36f47fb01cd4833075b1",
+      "original_source_sha256": "cf574e516a3b99e094f945c92ce5cd4f17afd360a9e2e52c081a90e0a2d303d0",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "527858532334a8122d863e6d8bee2101a031ecf1b04a36f47fb01cd4833075b1",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 5834,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/length-conditioned-summary.json",
+      "evidence_entry_sha256": "2334a5e179745fcb85f1b18f9168fbc561b6c9ec845c34ccc2a91517b7ebffd9",
+      "original_source_sha256": "69934823621707bf7bcada4783d8178f9292f0a3f71a73541bc775b4674469d5",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "2334a5e179745fcb85f1b18f9168fbc561b6c9ec845c34ccc2a91517b7ebffd9",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 33591,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/replay-curve.json",
+      "evidence_entry_sha256": "c36ac81f3245d597e93bbca903c8dcb0ef1414c95d27d5b7f25efd22f8d5cf16",
+      "original_source_sha256": "5fd0142a56b0a87a96fbe8e1b98ef43734883460794d54a0bc565ab1417fff05",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "c36ac81f3245d597e93bbca903c8dcb0ef1414c95d27d5b7f25efd22f8d5cf16",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 12564,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/position-trigger-diagnostic/paired-replay-ci.json",
+      "evidence_entry_sha256": "fb18201ec7df52fc8310bacb44fe7e2aff74a04763cbb4205237cd4e41da3029",
+      "original_source_sha256": "4a9f0814a19bdf49c83a67b31f679347d9cb3b0ee15924b462229ce1b89c8df4",
+      "role": "cpu-diagnostic-protocol-or-aggregate",
+      "sha256": "fb18201ec7df52fc8310bacb44fe7e2aff74a04763cbb4205237cd4e41da3029",
+      "transformations": [
+        "Compact JSON; retain all exported numerical values and original cohort/method/device identity.",
+        "Normalize local paths and device UUIDs; original binding digests describe pre-transformation sources.",
+        "Omitted fields: none"
+      ]
+    },
+    {
+      "bytes": 610167,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/samples.jsonl",
+      "evidence_entry_sha256": "99c528a5d272db29bb836f29705cf46ca5a1db6e7269668efb38c67e6bb0b09e",
+      "original_source_sha256": "abde771c671626d7e2bd6eada81fe374b4db468dee8efaeecbd08d05439f527e",
+      "role": "id-and-group-manifest",
+      "sha256": "99c528a5d272db29bb836f29705cf46ca5a1db6e7269668efb38c67e6bb0b09e",
+      "transformations": [
+        "Explicit metadata-field allowlist; omit answer/gold, prompt/generated token IDs and feature-cache paths.",
+        "Normalize source locations; preserve sample/component IDs and grouping/sampling fields."
+      ]
+    },
+    {
+      "bytes": 175063,
+      "entry": "output/kev-adaptive-reasoning/stream-readout/stopping-plan/oof-folds.jsonl",
+      "evidence_entry_sha256": "e60287f69d176ba7503e3418c79e2870378b919d4f186ee1a8a07059e39b113f",
+      "original_source_sha256": "9b1b6fb70ff07cd3bc7f92ac313e7322bbb30380c4c5693aac7d93fc7949c85d",
+      "role": "id-and-group-manifest",
+      "sha256": "e60287f69d176ba7503e3418c79e2870378b919d4f186ee1a8a07059e39b113f",
+      "transformations": [
+        "Explicit metadata-field allowlist; omit answer/gold, prompt/generated token IDs and feature-cache paths.",
+        "Normalize source locations; preserve sample/component IDs and grouping/sampling fields."
+      ]
+    },
+    {
+      "bytes": 496906,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/data-audit/confirmation-manifest.jsonl",
+      "evidence_entry_sha256": "7ff4e386e4e80f20820bd7c4a64ce26cb6e014d45bcf6edfcadea1a8c1a90e7a",
+      "original_source_sha256": "b20a032125835c4de8e19d4b2cccb7043cc455d9802fffe839c83e312e563ae4",
+      "role": "id-and-group-manifest",
+      "sha256": "7ff4e386e4e80f20820bd7c4a64ce26cb6e014d45bcf6edfcadea1a8c1a90e7a",
+      "transformations": [
+        "Explicit metadata-field allowlist; omit answer/gold, prompt/generated token IDs and feature-cache paths.",
+        "Normalize source locations; preserve sample/component IDs and grouping/sampling fields."
+      ]
+    },
+    {
+      "bytes": 4069201,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/sentence-supervision/work.json",
+      "evidence_entry_sha256": "a2c78236514da97e786c93deb1ff0e68b58b63595083a8367e8efe497d9ba91e",
+      "original_source_sha256": "299184c63e15401ad277deee6f37315d8a53ef41e6ce27e1ab80b1f29fb1729d",
+      "role": "sentence-event-metadata",
+      "sha256": "a2c78236514da97e786c93deb1ff0e68b58b63595083a8367e8efe497d9ba91e",
+      "transformations": [
+        "Metadata allowlist retains source IDs, event positions and training weights; no text, gold or predictions."
+      ]
+    },
+    {
+      "bytes": 101047,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/arc/test-metadata.json",
+      "evidence_entry_sha256": "58856169c09cd423bd32a3d930220e2c19019905ccf074698d3026a97654aba3",
+      "original_source_sha256": "6437cfd3b4f8bae5379ff6b4fea76a59eae66a21fbd54efcbf7cd9ff95170c0c",
+      "role": "arc-id-and-group-manifest",
+      "sha256": "58856169c09cd423bd32a3d930220e2c19019905ccf074698d3026a97654aba3",
+      "transformations": [
+        "Retain selected cohort metadata only (test256 or development16); no raw question/options/gold."
+      ]
+    },
+    {
+      "bytes": 7017,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/arc/validation-metadata.json",
+      "evidence_entry_sha256": "d42f3408816500c14fcfcc35d8aec172ae5e5c5604edbefd10fdbe18ce0ef802",
+      "original_source_sha256": "cf6962aff22c993dae8d21db80dbb5ade4853730065e4ae17ca9923c0e87e671",
+      "role": "arc-id-and-group-manifest",
+      "sha256": "d42f3408816500c14fcfcc35d8aec172ae5e5c5604edbefd10fdbe18ce0ef802",
+      "transformations": [
+        "Retain selected cohort metadata only (test256 or development16); no raw question/options/gold."
+      ]
+    },
+    {
+      "bytes": 648720,
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/formal-confirmation/metadata.json",
+      "evidence_entry_sha256": "40cf053f45cd4818b4365a9d774f1511611f6c4870ca40c9c9653278e5731899",
+      "original_source_sha256": "5261507bfc51888f2b92164636bf53619d8c5eb8c65104255eee24056d545f6a",
+      "role": "evaluation-id-and-group-manifest",
+      "sha256": "40cf053f45cd4818b4365a9d774f1511611f6c4870ca40c9c9653278e5731899",
+      "transformations": [
+        "Explicit metadata allowlist; preserve all 768 identities, source groups, strata and execution indices."
+      ]
+    },
+    {
+      "bytes": 1809,
+      "entry": "EXECUTION-IDENTITY.json",
+      "evidence_entry_sha256": "df5045b996082ab505c817edf80775059655c1de378a23b59111e56a213101a3",
+      "original_source_sha256": null,
+      "role": "execution-index",
+      "sha256": "df5045b996082ab505c817edf80775059655c1de378a23b59111e56a213101a3",
+      "transformations": []
+    },
+    {
+      "bytes": 1364,
+      "entry": "README-data.md",
+      "role": "documentation",
+      "sha256": "d315e2cb8a2f27cc8f211139b7502442ba6fda6c2b92354d5eb383b60222d169"
+    }
+  ],
+  "excluded_from_upload": [
+    {
+      "entry": "output/kev-adaptive-reasoning/decision-improvements/arr-sprint/main-table/review-supplement-20261012-v1/result-synthesis/source/synthesize.py",
+      "reason": "Package documentation or historical report rendering."
+    },
+    {
+      "entry": "coling2027-paper/scripts/render_execution_index.py",
+      "reason": "Package documentation or historical report rendering."
+    },
+    {
+      "entry": "coling2027-paper/scripts/render_position_diagnostic.py",
+      "reason": "Package documentation or historical report rendering."
+    },
+    {
+      "entry": "coling2027-paper/sections/03-method.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/04-experiments.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/09-appendix.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/12-confirmation-details.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/13-reproducibility.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/14-supplementary-comparisons.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/sections/15-position-diagnostic.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/main-results.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/ablations.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/control-work.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/threshold-operating-points.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/paired-comparisons.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/full-cohort-costs.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/routing.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/same-device-timing.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/stopping.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/supplement-calibrated.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/supplement-factorial.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/supplement-execution.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/trigger-revisions.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/position-diagnostic.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "coling2027-paper/tables/execution-index.tex",
+      "reason": "Already included in the submitted paper."
+    },
+    {
+      "entry": "README.md",
+      "reason": "Package documentation or historical report rendering."
+    }
+  ],
+  "package": "data",
+  "schema": 1,
+  "source_evidence_sha256": "1ed319f905c8914c79b6a26adc626c84e1dd5a81d6fdfdc13ed43e13aabcb19a"
+}

@@ -1,0 +1,5731 @@
+{
+  "schema_version": 1,
+  "seed": 20261010,
+  "bootstrap_draws": 10000,
+  "scope": "Previously completed and scored observed evaluation collections only",
+  "series": [
+    {
+      "id": "primary13",
+      "questions": 768,
+      "methods": [
+        "direct",
+        "full-512",
+        "full-1024",
+        "full-2048",
+        "simple-margin-every8-1024",
+        "ours-entropy70-1024",
+        "ours-entropy85-1024",
+        "ours-entropy95-1024",
+        "forced-terminal-prefill-1024",
+        "answer-consistency-k10-prefill-1024",
+        "deer-qwen-adapted-prefill-1024",
+        "deer-qwen-adapted-prefill-2048",
+        "native-8192"
+      ],
+      "repetitions": 1,
+      "repeated_timing_only": false,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "direct",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-512",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "simple-margin-every8-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy85-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy95-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "native-8192",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "direct",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-512",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy85-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy95-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "native-8192",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "direct",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-512",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "simple-margin-every8-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy85-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy95-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "native-8192",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "direct",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-512",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy85-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy95-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "native-8192",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "direct",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-512",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "simple-margin-every8-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy85-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy95-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "native-8192",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "direct",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-512",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy85-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy95-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "native-8192",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "direct",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-512",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "simple-margin-every8-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy85-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy95-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "native-8192",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "direct",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-512",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy85-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy95-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "native-8192",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens"
+          ]
+        }
+      ],
+      "summary_metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ]
+    },
+    {
+      "id": "matched-six",
+      "questions": 768,
+      "methods": [
+        "ours-entropy70-1024",
+        "ablate-start",
+        "ablate-learned-read",
+        "ablate-stop",
+        "route-terminal",
+        "ablate-benefit-gate-margin"
+      ],
+      "repetitions": 1,
+      "repeated_timing_only": false,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-start",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-learned-read",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-stop",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-benefit-gate-margin",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ablate-stop",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-start",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-learned-read",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-stop",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-benefit-gate-margin",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ablate-stop",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-start",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-learned-read",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-stop",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-benefit-gate-margin",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ablate-stop",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-start",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-learned-read",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-stop",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-benefit-gate-margin",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ablate-stop",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        }
+      ],
+      "summary_metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ]
+    },
+    {
+      "id": "primary13-timing48",
+      "questions": 48,
+      "methods": [
+        "direct",
+        "full-512",
+        "full-1024",
+        "full-2048",
+        "simple-margin-every8-1024",
+        "ours-entropy70-1024",
+        "ours-entropy85-1024",
+        "ours-entropy95-1024",
+        "forced-terminal-prefill-1024",
+        "answer-consistency-k10-prefill-1024",
+        "deer-qwen-adapted-prefill-1024",
+        "deer-qwen-adapted-prefill-2048",
+        "native-8192"
+      ],
+      "repetitions": 3,
+      "repeated_timing_only": true,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "all",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "all",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": []
+        }
+      ],
+      "summary_metrics": [
+        "pipeline_seconds"
+      ],
+      "repeat_average": [
+        "pipeline_seconds"
+      ]
+    },
+    {
+      "id": "matched-six-timing48",
+      "questions": 48,
+      "methods": [
+        "ours-entropy70-1024",
+        "ablate-start",
+        "ablate-learned-read",
+        "ablate-stop",
+        "route-terminal",
+        "ablate-benefit-gate-margin"
+      ],
+      "repetitions": 3,
+      "repeated_timing_only": true,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-start",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-learned-read",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-stop",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-benefit-gate-margin",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ablate-stop",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-start",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-learned-read",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-stop",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-benefit-gate-margin",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ablate-stop",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-start",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-learned-read",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-stop",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-benefit-gate-margin",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ablate-stop",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-start",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-learned-read",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-stop",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "ablate-benefit-gate-margin",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ablate-stop",
+          "reference": "route-terminal",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        }
+      ],
+      "summary_metrics": [
+        "pipeline_seconds"
+      ],
+      "repeat_average": [
+        "pipeline_seconds"
+      ]
+    },
+    {
+      "id": "bridge48-first",
+      "questions": 48,
+      "methods": [
+        "direct",
+        "full-512",
+        "full-1024",
+        "full-2048",
+        "simple-margin-every8-1024",
+        "ours-entropy70-1024",
+        "ours-entropy85-1024",
+        "ours-entropy95-1024",
+        "forced-terminal-prefill-1024",
+        "answer-consistency-k10-prefill-1024",
+        "deer-qwen-adapted-prefill-1024",
+        "deer-qwen-adapted-prefill-2048",
+        "native-8192"
+      ],
+      "repetitions": 1,
+      "repeated_timing_only": false,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "direct",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-512",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "simple-margin-every8-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy85-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy95-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "native-8192",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "direct",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-512",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy70-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy85-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy95-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "native-8192",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "direct",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-512",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "simple-margin-every8-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy85-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy95-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "native-8192",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "direct",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-512",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy70-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy85-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy95-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "native-8192",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "direct",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-512",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "simple-margin-every8-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy85-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy95-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "native-8192",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "direct",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-512",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy70-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy85-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy95-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "native-8192",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "direct",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-512",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "simple-margin-every8-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy85-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy95-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "native-8192",
+          "reference": "full-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "direct",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-512",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy70-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy85-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy95-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "native-8192",
+          "reference": "simple-margin-every8-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "direct",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-512",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "full-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "simple-margin-every8-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy85-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "ours-entropy95-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "answer-consistency-k10-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-1024",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "deer-qwen-adapted-prefill-2048",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "native-8192",
+          "reference": "ours-entropy70-1024",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "pipeline_seconds"
+          ]
+        }
+      ],
+      "summary_metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ]
+    },
+    {
+      "id": "factorial-primary",
+      "questions": 768,
+      "methods": [
+        "factorial-benefit_raw-learned_tick4",
+        "factorial-benefit_raw-every8",
+        "factorial-margin-learned_tick4",
+        "factorial-margin-every8"
+      ],
+      "repetitions": 1,
+      "repeated_timing_only": false,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-benefit_raw-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-margin-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-benefit_raw-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-margin-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-benefit_raw-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-margin-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-benefit_raw-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-margin-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "accuracy",
+            "pipeline_seconds",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        }
+      ],
+      "summary_metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ]
+    },
+    {
+      "id": "factorial-timing48",
+      "questions": 48,
+      "methods": [
+        "factorial-benefit_raw-learned_tick4",
+        "factorial-benefit_raw-every8",
+        "factorial-margin-learned_tick4",
+        "factorial-margin-every8"
+      ],
+      "repetitions": 3,
+      "repeated_timing_only": true,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-benefit_raw-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "factorial-margin-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-benefit_raw-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "factorial-margin-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-benefit_raw-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "factorial-margin-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-benefit_raw-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-learned_tick4",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-benefit_raw-every8",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "factorial-margin-learned_tick4",
+          "reference": "factorial-margin-every8",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        }
+      ],
+      "summary_metrics": [
+        "pipeline_seconds"
+      ],
+      "repeat_average": [
+        "pipeline_seconds"
+      ]
+    },
+    {
+      "id": "calibrated-primary",
+      "questions": 768,
+      "methods": [
+        "dev-learned-q70",
+        "dev-learned-q85",
+        "dev-learned-q95",
+        "dev-margin-gap8-q70",
+        "dev-margin-gap8-q85",
+        "dev-margin-gap16-q95",
+        "dev-deer-q80",
+        "dev-deer-q95",
+        "forced-terminal-prefill-1024"
+      ],
+      "repetitions": 1,
+      "repeated_timing_only": false,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "dev-learned-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-learned-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-margin-gap8-q70",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-margin-gap8-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-margin-gap16-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-deer-q80",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-deer-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-learned-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-learned-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-margin-gap8-q70",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-margin-gap8-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-margin-gap16-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-deer-q80",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-deer-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-learned-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-learned-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-margin-gap8-q70",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-margin-gap8-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-margin-gap16-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-deer-q80",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-deer-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-learned-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-learned-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-margin-gap8-q70",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-margin-gap8-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-margin-gap16-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-deer-q80",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-deer-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "accuracy",
+            "physical_output_tokens",
+            "generation_tokens",
+            "full_reads",
+            "trigger_calls",
+            "input_tokens",
+            "cached_input_tokens",
+            "reasoning_rate",
+            "early_stop_rate",
+            "invalid_rate",
+            "budget_hit_rate"
+          ]
+        }
+      ],
+      "summary_metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ]
+    },
+    {
+      "id": "calibrated-timing48",
+      "questions": 48,
+      "methods": [
+        "dev-learned-q70",
+        "dev-learned-q85",
+        "dev-learned-q95",
+        "dev-margin-gap8-q70",
+        "dev-margin-gap8-q85",
+        "dev-margin-gap16-q95",
+        "dev-deer-q80",
+        "dev-deer-q95",
+        "forced-terminal-prefill-1024"
+      ],
+      "repetitions": 3,
+      "repeated_timing_only": true,
+      "metrics": [
+        "accuracy",
+        "pipeline_seconds",
+        "physical_output_tokens",
+        "generation_tokens",
+        "full_reads",
+        "trigger_calls",
+        "input_tokens",
+        "cached_input_tokens",
+        "reasoning_rate",
+        "early_stop_rate",
+        "invalid_rate",
+        "budget_hit_rate"
+      ],
+      "paired": [
+        {
+          "dataset": "all",
+          "method": "dev-learned-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-learned-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-margin-gap8-q70",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-margin-gap8-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-margin-gap16-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-deer-q80",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "dev-deer-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "all",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-learned-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-learned-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-margin-gap8-q70",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-margin-gap8-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-margin-gap16-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-deer-q80",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "dev-deer-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "proofwriter",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-learned-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-learned-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-margin-gap8-q70",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-margin-gap8-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-margin-gap16-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-deer-q80",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "dev-deer-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "logiqa2",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-learned-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-learned-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-margin-gap8-q70",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-margin-gap8-q85",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-margin-gap16-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-deer-q80",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "dev-deer-q95",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        },
+        {
+          "dataset": "arc_challenge",
+          "method": "forced-terminal-prefill-1024",
+          "reference": "dev-learned-q70",
+          "available_metrics": [
+            "pipeline_seconds"
+          ]
+        }
+      ],
+      "summary_metrics": [
+        "pipeline_seconds"
+      ],
+      "repeat_average": [
+        "pipeline_seconds"
+      ]
+    }
+  ],
+  "source_receipts": [
+    {
+      "collection": "formal-confirmation/sealed/core",
+      "records": 6912,
+      "bindings_sha256": "161941f29df13b61216adc08967eec0cf7575dabcde2f70aa61dcceb02001535"
+    },
+    {
+      "collection": "formal-confirmation/sealed/baselines",
+      "records": 4320,
+      "bindings_sha256": "161941f29df13b61216adc08967eec0cf7575dabcde2f70aa61dcceb02001535"
+    },
+    {
+      "collection": "paper-essential/sealed",
+      "records": 5184,
+      "bindings_sha256": "161941f29df13b61216adc08967eec0cf7575dabcde2f70aa61dcceb02001535"
+    },
+    {
+      "collection": "formal-confirmation/sealed/gpu1-bridge",
+      "records": 384,
+      "bindings_sha256": "161941f29df13b61216adc08967eec0cf7575dabcde2f70aa61dcceb02001535"
+    },
+    {
+      "collection": "review-supplement-20261012-v1/controls",
+      "records": 3456,
+      "protocol_sha256": "dd497c102c76795c071948559aa4a5c163381f4faf1c64afab9897b995dbf20d"
+    },
+    {
+      "collection": "review-supplement-20261012-v1/resume-parallel-v1/gpu0/calibrated",
+      "records": 2285,
+      "protocol_sha256": "1648adeda17b8c1ff4d6bfab936e24561dcd65b8b9cee01e55d13534fc342bd1"
+    },
+    {
+      "collection": "review-supplement-20261012-v1/resume-parallel-v1/gpu1/calibrated",
+      "records": 2286,
+      "protocol_sha256": "5a6d52795716e30113e9aed39bf7563639abf1442db16a6a0c63635a28b6fc4f"
+    }
+  ],
+  "files": {
+    "records.csv": "02ecdbeaeee1cdad125facc08fab0257f3cf9be7a6d4d75aa336e108528a719a",
+    "metadata.json": "07c6305ff520b4a1df24c2c134864b922054987071130e929fa3ed02961d1574",
+    "expected.json": "24e77faf7a854c893d836a250fdd40247df66cf96908bf2bf30dc072d0ceaa0f"
+  },
+  "privacy": "Anonymous question/material-group identifiers; correctness only. No question text, gold/answer classes, predictions, generated tokens, raw UUIDs or private paths.",
+  "limitations": "Recomputes exported measurement statistics; does not rerun inference, validate generation traces or independently establish original measurement authenticity."
+}
